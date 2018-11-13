@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:500");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:700");
+@import url("https://fonts.googleapis.com/css?family=Rubik");
+@import url("https://fonts.googleapis.com/css?family=Rubik:300");
+@import url("https://fonts.googleapis.com/css?family=Rubik:500");
+@import url("https://fonts.googleapis.com/css?family=Rubik:700");
+@import url("https://fonts.googleapis.com/css?family=Rubik:900");
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:500");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:700");
+@import url("https://fonts.googleapis.com/css?family=Cabin");
+@import url("https://fonts.googleapis.com/css?family=Cabin:500");
+@import url("https://fonts.googleapis.com/css?family=Cabin:600");
+@import url("https://fonts.googleapis.com/css?family=Cabin:700");
+@import url("https://fonts.googleapis.com/css?family=Muli");
+@import url("https://fonts.googleapis.com/css?family=Muli:200");
+@import url("https://fonts.googleapis.com/css?family=Muli:300");
+@import url("https://fonts.googleapis.com/css?family=Muli:600");
+@import url("https://fonts.googleapis.com/css?family=Muli:700");
+@import url("https://fonts.googleapis.com/css?family=Muli:800");
+@import url("https://fonts.googleapis.com/css?family=Muli:900");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Comfortaa");
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+@import url("https://fonts.googleapis.com/css?family=Cookie");
+@import url("https://fonts.googleapis.com/css?family=Satisfy");
+@import url("https://fonts.googleapis.com/css?family=Caveat");
+@import url("https://fonts.googleapis.com/css?family=Kalam");
+.projects-slider {
+  width: 100%;
+  position: relative; }
+  .projects-slider .project {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 3rem;
+    margin-right: 50px;
+    cursor: pointer;
+    display: flex !important;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: space-between;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-flex-flow: row nowrap;
+    -moz-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap; }
+    @media (max-width: 768px) {
+      .projects-slider .project {
+        padding: 2rem; } }
+    @media (max-width: 533px) {
+      .projects-slider .project {
+        padding: 1.5rem; } }
+    .projects-slider .project:hover .project__shape {
+      background: #fff;
+      border-bottom: 10px solid #000; }
+    .projects-slider .project:hover .project__name {
+      color: #000; }
+    .projects-slider .project__shape {
+      position: absolute;
+      width: 70%;
+      max-width: 70%;
+      height: 100%;
+      top: 0%;
+      left: 0;
+      border-bottom: 2px solid #f7f4fd;
+      background: #f7f4fd;
+      -moz-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      -webkit-transition: all 0.2s ease;
+      -ms-transition: all 0.2s ease;
+      transition: all 0.2s ease; }
+    .projects-slider .project__name {
+      font-size: 4rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-family: 'Ubuntu';
+      display: table;
+      max-width: 300px;
+      z-index: 2222;
+      color: #ccc; }
+      @media (max-width: 768px) {
+        .projects-slider .project__name {
+          font-size: 2rem; } }
+      @media (max-width: 533px) {
+        .projects-slider .project__name {
+          font-size: 1.5rem; } }
+      @media (max-width: 414px) {
+        .projects-slider .project__name {
+          font-size: 1rem; } }
+    .projects-slider .project__image {
+      max-width: 500px;
+      height: auto;
+      position: relative; }
+      .projects-slider .project__image img {
+        max-width: 100%;
+        height: auto; }

@@ -1,0 +1,82 @@
+@import '../../../../assets/sass/modules/_mixins';
+@import '../../../../assets/sass/base/_palette';
+@import '../../../../assets/sass/base/_typography';
+
+.projects-slider {
+    width: 100%;
+    position: relative;
+
+    .project {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        padding: 3rem;
+        margin-right: 50px;
+        cursor: pointer;
+        display: flex !important;
+        @include justify-content(space-between);
+        @include align-items(center);
+        @include flex-flow(row nowrap);
+        @include breakpoint(768) {
+            padding: 2rem;
+        }
+        @include breakpoint(533) {
+            padding: 1.5rem;
+        }
+        &:hover {
+
+            .project__shape {
+                background: $white;
+                border-bottom: 10px solid $black;
+            }
+
+            .project__name {
+                color: $black;
+            }
+        }
+
+        &__shape {
+            position: absolute;
+            width: 70%;
+            max-width: 70%;
+            height: 100%;
+            top: 0%;
+            left: 0;
+            border-bottom: 2px solid lighten($purple-t, 1%);
+            background: lighten($purple-t, 1%);
+            @include transition(all 0.2s ease);
+        }
+    
+        &__name {
+            font-size: 4rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-family: 'Ubuntu';
+            display: table;
+            max-width: 300px;
+            z-index: 2222;
+            color: $silver;
+            @include breakpoint(768) {
+                font-size: 2rem;
+            }
+            @include breakpoint(533) {
+                font-size: 1.5rem;
+            }
+            @include breakpoint(414) {
+                font-size: 1rem;
+            }
+        }
+    
+        &__image {
+            max-width: 500px;
+            height: auto;
+            position: relative;
+    
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}

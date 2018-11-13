@@ -1,0 +1,63 @@
+.line-before {
+    width: 120px;
+    height: 4px;
+    display: inline-block;
+    margin-right: 15px;
+    @include breakpoint(768) {
+        display: none;
+    }
+
+    &--wwd {
+        background: $deepskyblue-d;
+    }
+
+    &--services {
+        background: $turquoise-d;
+    }
+
+    &--technologies {
+        background: $sandybrown-d;
+    }
+
+    &--promise {
+        background: $orangered-d;
+    }
+
+    &--industries {
+        background: $forest-d;
+    }
+
+    &--clients {
+        background: $salmon-d;
+    }
+}
+
+.line-after {
+    width: 120px;
+    height: 4px;
+    display: inline-block;
+    margin-left: 15px;
+    @include breakpoint(768) {
+        display: none;
+    }
+
+    &--story {
+        background: $red-d;
+    }
+
+    &--process {
+        background: $mediumseagreen;
+    }
+
+    &--projects {
+        background: $purple-d;
+    }
+
+    &--pricing {
+        background: $darkdimgray;
+    }
+
+    &--values {
+        background: $gold-d;
+    }
+}

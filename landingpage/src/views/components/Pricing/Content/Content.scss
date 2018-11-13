@@ -1,0 +1,22 @@
+@import '../../../../assets/sass/modules/_mixins';
+@import '../../../../assets/sass/base/_palette';
+@import '../../../../assets/sass/base/_typography';
+
+.sc-pricing {
+    width: 50%;
+    z-index: 100;
+}
+
+.p-pricing {
+    font-weight: 100;
+    font-family: 'Ubuntu';
+    color: $silverdark;
+    text-align: right;
+    font-size: 0.9rem;
+
+    span {
+        font-weight: 600;
+        font-size: 1rem;
+        color: $darkdimgray;
+    }
+}

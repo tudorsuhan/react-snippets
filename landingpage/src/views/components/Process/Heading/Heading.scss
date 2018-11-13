@@ -1,0 +1,15 @@
+@import '../../../../assets/sass/modules/_mixins';
+@import '../../../../assets/sass/base/_palette';
+@import '../../../../assets/sass/base/_typography';
+
+.sh-process {
+    @include justify-content(flex-start);
+}
+
+.title-process, 
+.subtitle-process {
+    font-family: 'Ubuntu';
+    color: $mediumseagreen;
+    text-align: left;
+}
+

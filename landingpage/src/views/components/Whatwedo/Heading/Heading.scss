@@ -1,0 +1,13 @@
+@import '../../../../assets/sass/modules/_mixins';
+@import '../../../../assets/sass/base/_palette';
+@import '../../../../assets/sass/base/_typography';
+
+.sh-wwd {
+    @include justify-content(flex-start);
+}
+
+.title-wwd, 
+.subtitle-wwd {
+    font-family: 'Cabin';
+    color: $deepskyblue-d;
+}

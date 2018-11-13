@@ -1,0 +1,34 @@
+// .type {
+//     width: 100%;
+//     position: relative;
+//     padding: 50px 0 50px;
+
+//     #typing {
+//         font-size: 4rem;
+//         font-weight: 600;
+//         font-family: 'Ubuntu';
+//         color: $black;
+//         margin: 0;
+//         line-height: 70px;
+//         @include breakpoint(992) {
+//             font-size: 3.5rem;
+//         }
+//         @include breakpoint(768) {
+//             font-size: 3rem;
+//             line-height: 55px;
+//         }
+//         @include breakpoint(533) {
+//             font-size: 2.4rem;
+//             line-height: 45px;
+//         }
+//         @include breakpoint(414) {
+//             font-size: 2rem;
+//             line-height: 35px;
+//         }
+
+//         &--text {
+//             font-weight: 300;
+//             font-family: 'Quicksand';
+//         }
+//     }
+// }

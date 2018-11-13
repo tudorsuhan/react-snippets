@@ -1,0 +1,9 @@
+@import '../../../../../assets/sass/base/_palette';
+
+.whatsapp {
+    &:hover {
+        svg g path {
+            fill: $whatsapp;
+        }
+    }
+}

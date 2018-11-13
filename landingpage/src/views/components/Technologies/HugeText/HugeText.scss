@@ -1,0 +1,18 @@
+@import '../../../../assets/sass/modules/_mixins';
+@import '../../../../assets/sass/base/_palette';
+@import '../../../../assets/sass/base/_typography';
+
+.technologies-text {
+    font-size: 10vw;
+    font-weight: 600;
+    font-family: 'Ubuntu';
+    color: $sandybrown-t;
+    right: 0;
+    top: 4rem;
+    @include breakpoint(1080) {
+        right: 2rem;
+    }
+    @include breakpoint(768) {
+        display: none;
+    }
+}

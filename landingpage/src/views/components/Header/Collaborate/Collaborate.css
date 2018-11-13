@@ -1,0 +1,36 @@
+.collaborate {
+  position: relative; }
+  .collaborate a {
+    font-size: 0.9rem;
+    font-weight: 300;
+    font-family: 'Lato';
+    color: #464f5c; }
+    .collaborate a:after {
+      content: '';
+      display: table;
+      width: 0%;
+      height: 2px;
+      opacity: 0;
+      background: #3CB371; }
+    .collaborate a:hover {
+      color: #3CB371; }
+      .collaborate a:hover span {
+        color: #3CB371;
+        -moz-transition: color 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+        -o-transition: color 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+        -webkit-transition: color 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+        -ms-transition: color 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+        transition: color 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+        will-change: color; }
+      .collaborate a:hover:after {
+        width: 100%;
+        -moz-transition: width 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67), opacity 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+        -o-transition: width 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67), opacity 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+        -webkit-transition: width 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67), opacity 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+        -ms-transition: width 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67), opacity 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+        transition: width 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67), opacity 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+        will-change: width, opacity;
+        opacity: 1; }
+    .collaborate a span {
+      font-weight: 500;
+      color: #32383e; }

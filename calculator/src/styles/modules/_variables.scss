@@ -1,0 +1,21 @@
+// Font size
+:root {
+	font-size: 18px;
+}
+
+@media only screen and (min-width: 768px) {
+	:root { font-size: 24px }
+}
+
+// Colors
+$white: #fff;
+$black: #4b4c4c;
+$greylight: #efefef;
+$magenta: #ed1e79;
+$orange: #f15a24;
+$forest: #009245;
+$red: #ff0000;
+$lime: #39b54a;
+
+// Sizes
+$button: 4rem;

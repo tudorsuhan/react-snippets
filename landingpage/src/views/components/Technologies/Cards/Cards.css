@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:500");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:700");
+@import url("https://fonts.googleapis.com/css?family=Rubik");
+@import url("https://fonts.googleapis.com/css?family=Rubik:300");
+@import url("https://fonts.googleapis.com/css?family=Rubik:500");
+@import url("https://fonts.googleapis.com/css?family=Rubik:700");
+@import url("https://fonts.googleapis.com/css?family=Rubik:900");
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:500");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:700");
+@import url("https://fonts.googleapis.com/css?family=Cabin");
+@import url("https://fonts.googleapis.com/css?family=Cabin:500");
+@import url("https://fonts.googleapis.com/css?family=Cabin:600");
+@import url("https://fonts.googleapis.com/css?family=Cabin:700");
+@import url("https://fonts.googleapis.com/css?family=Muli");
+@import url("https://fonts.googleapis.com/css?family=Muli:200");
+@import url("https://fonts.googleapis.com/css?family=Muli:300");
+@import url("https://fonts.googleapis.com/css?family=Muli:600");
+@import url("https://fonts.googleapis.com/css?family=Muli:700");
+@import url("https://fonts.googleapis.com/css?family=Muli:800");
+@import url("https://fonts.googleapis.com/css?family=Muli:900");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Comfortaa");
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+@import url("https://fonts.googleapis.com/css?family=Cookie");
+@import url("https://fonts.googleapis.com/css?family=Satisfy");
+@import url("https://fonts.googleapis.com/css?family=Caveat");
+@import url("https://fonts.googleapis.com/css?family=Kalam");
+.tech-card {
+  width: calc(98% / 8);
+  height: 105px;
+  position: relative;
+  margin: 10px;
+  cursor: crosshair;
+  -moz-transition: all 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  -o-transition: all 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  -webkit-transition: all 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  -ms-transition: all 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  transition: all 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67); }
+  @media (max-width: 1080px) {
+    .tech-card {
+      width: calc(94% / 8); } }
+  @media (max-width: 992px) {
+    .tech-card {
+      width: calc(94% / 6); } }
+  @media (max-width: 768px) {
+    .tech-card {
+      width: calc(94% / 5); } }
+  @media (max-width: 667px) {
+    .tech-card {
+      width: calc(94% / 4); } }
+  @media (max-width: 533px) {
+    .tech-card {
+      width: calc(94% / 3);
+      margin: 10px 0; } }
+  @media (max-width: 414px) {
+    .tech-card {
+      width: calc(94% / 2); } }
+  .tech-card:hover {
+    background: #fff;
+    -webkit-box-shadow: 0px 5px 10px 5px rgba(119, 119, 119, 0.1);
+    -moz-box-shadow: 0px 5px 10px 5px rgba(119, 119, 119, 0.1);
+    box-shadow: 0px 5px 10px 5px rgba(119, 119, 119, 0.1); }
+  .tech-card__logo {
+    text-align: center;
+    padding: 10px 0 5px; }
+    .tech-card__logo img {
+      width: 40px;
+      height: 40px; }
+  .tech-card__name {
+    text-align: center;
+    padding: 0 10px;
+    font-size: 0.9rem;
+    color: #111;
+    font-weight: 600;
+    font-family: 'Rubik', sans-serif; }

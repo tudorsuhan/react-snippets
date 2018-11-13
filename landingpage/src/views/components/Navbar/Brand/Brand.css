@@ -1,0 +1,25 @@
+.brand-navbar {
+  width: auto;
+  height: 70px;
+  padding: 10px;
+  background: #464f5c;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center; }
+  .brand-navbar h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Kalam';
+    color: #fff; }

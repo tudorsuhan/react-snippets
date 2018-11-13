@@ -1,0 +1,37 @@
+/**
+ * Color Palette
+ */
+.game {
+  display: flex;
+  flex-direction: row; }
+  .game__board {
+    position: relative; }
+  .game__info {
+    margin-left: 20px;
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto; }
+    .game__info .status {
+      position: relative; }
+      .game__info .status__history {
+        width: 140px;
+        margin-bottom: 1px; }
+        .game__info .status__history button {
+          width: 100%;
+          border: 0;
+          border: 1px solid #4273e8;
+          border-radius: 2px;
+          padding: 7px 12px;
+          font-size: 0.8rem;
+          font-weight: 400;
+          font-family: 'Cabin';
+          color: #fff;
+          background: #4273e8; }
+          .game__info .status__history button:focus {
+            color: #000;
+            background: #fff;
+            border: 1px solid #b4c9ff; }
+    .game__info .moves {
+      position: relative; }

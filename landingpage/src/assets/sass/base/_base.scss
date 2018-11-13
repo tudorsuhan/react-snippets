@@ -1,0 +1,74 @@
+// Modules
+@import "../modules/_maps";
+@import "../modules/_mixins";
+@import "../modules/_variables";
+@import './_palette';
+
+// Setup Enviroment
+html {
+  -ms-overflow-style: scrollbar;
+  @include border-box(border-box);
+  @include font-smoothing();
+  @include text-size-adjust(100%);
+}
+
+* {
+  box-sizing: inherit;
+  &:before,
+  &:after {
+    box-sizing: inherit;
+  }
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  background: $white;
+  overflow-wrap: break-word;
+  font-size: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  color: transparent;
+  font-size: 0;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic;
+}
+
+a {
+  color: $darkdimgray;
+  text-decoration: none;
+  @include touch-action(manipulation);
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+// Remove text-shadow in selection highlight
+::-webkit-selection {
+  background: $darkdimgray;
+  text-shadow: none;
+  color: $white;
+}
+
+::-moz-selection {
+  background: $darkdimgray;
+  text-shadow: none;
+  color: $white;
+}
+
+::selection {
+  background: $darkdimgray;
+  text-shadow: none;
+  color: $white;
+}
+
+* {
+  &:focus {
+    outline: none;
+  }
+  outline: 0;
+}

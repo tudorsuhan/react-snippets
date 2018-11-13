@@ -1,0 +1,233 @@
+// Custom Breakpoints - map-get($custom-queries, xxl-1275px)
+
+// Colors | palette(basics, white);
+@function palette($palette, $tone: 'base') {
+    @return map-get(map-get($palettes, $palette), $tone);
+}
+
+$palettes: ( 
+  basics: ( 
+    white: #fff, 
+    black: #000, 
+    brown: #B7695C, 
+    orange: #FF7733, 
+    red: #f52d02, 
+    yellow: #F7C223
+  ),
+  purple: ( 
+    base: #724AB1, 
+    light: #DA1BF6, 
+    dark: #420652, 
+    soft-dark: #5B0672, 
+    hard-dark: #370545,
+    rebecca: #663399 
+  ), 
+  grey: (
+    base: #999, 
+    light: #ccc,  
+    light-softness: #ddd, 
+    extra-light: #eee, 
+    dark: #666, 
+    darken: #444, 
+    extra-dark: #333
+  ),
+  green: (
+    base: #19A935, 
+    light: #2BB013, 
+    dark-softless: #24B86A, 
+    dark-soft: #32A553 
+  ),
+  blue: (
+    light: #36A0A7, 
+    dark-light: #4285F4, 
+    dark: #0E65AD
+
+  ),
+  orange: (
+    dark: #F97704 
+  ),
+  red: (
+    base: #ff0000,
+    light: #DE3E35
+  ),
+  brown: (
+    base: #90492e,
+    grey: #8e6f55,
+    light: #c97b42,
+    hard-dark: #521808,
+    extra-dark: #240a05
+  )
+);
+
+// Typography 
+// Font Size | font-size(p-fs, small);
+@function font-size($fs, $size: 'default') {
+    @return map-get(map-get($font-size, $fs), $size);
+}
+
+$font-size: (
+  default: (
+    default: normal
+  ),
+  p: (
+    default: 1rem, 
+    small: 0.9rem, 
+    medium: 0.95rem, 
+    large: 1rem, 
+    x-large: 1.05rem
+  ),
+  p-custom: (
+    
+  ),
+  h1: (
+    default: 2rem, 
+    small: 1.8rem, 
+    medium: 1.9rem, 
+    large: 2.1rem, 
+    x-large: 2.2rem,
+    xx-large: 2.3rem
+  ),
+  h-custom: (
+    h1-smallest: 1.6rem, 
+    h1-lighten: 1.7rem, 
+    h2-default: 1.5rem, 
+    h3-default: 1.17rem, 
+    h4-default: 1rem, 
+    h5-default: 0.83rem, 
+    h6-default: 0.67rem
+  ),
+  more-fs: (
+    
+  )
+);
+  
+// Line Height | line-height(p-lh, x-large);
+@function line-height($lh, $height: 'default') {
+    @return map-get(map-get($line-height, $lh), $height);
+}
+
+$line-height: (
+  p-lh: (
+    default: normal, 
+    small: '', 
+    medium: '', 
+    large: '', 
+    x-large: ''
+  ),
+  h-lh: (
+    default: '', 
+    small: '', 
+    medium: '', 
+    large: '', 
+    x-large: ''
+  ),
+  more-lh: (
+    
+  )
+);
+  
+// Font Weight | font-weight(medium, regular);
+@function font-weight($fw, $weight: 'default') {
+    @return map-get(map-get($font-weight, $fw), $weight);
+}
+
+$font-weight: (
+  default: (
+    default: normal
+  ),
+  small: (
+    default: 400,
+    thin: 100,
+    extra-light: 200,
+    light: 300
+  ),
+  medium: (
+    default: 400,
+    regular: 400,
+    medium: 500,
+    semi-bold: 600
+  ),
+  large: (
+    default: 400,
+    bold: 700,
+    extra-bold: 800,
+    ultra: 900
+  )
+);
+
+// Letter Spacing | letter-spacing(small, small-a);
+@function letter-spacing($ls, $spacing: 'default') {
+    @return map-get(map-get($letter-spacing, $ls), $spacing);
+}
+
+$letter-spacing: (
+  small: (
+    default: normal,
+    small-a: 10px,
+    small-b: 15px,
+    small-c: 20px
+  ),
+  medium: (
+    default: normal,
+    medium-a: 25px,
+    medium-b: 30px,
+    medium-c: 35px
+  ),
+  large: (
+    default: normal,
+    large-a: 40px,
+    large-b: 45px,
+    large-c: 50px
+  ),
+  custom: (
+    custom-1: 1px,
+    custom-2: 2px,
+    custom-a: 7px
+  )
+);
+
+// Z-index | z-index(layout, modal);
+@function z-index($z, $def: 'default') {
+    @return map-get(map-get($z-index, $z), $def);
+}
+
+$z-index: (
+  layout: (
+    default: 0,
+    modal: 200,
+    navbar: 100,
+    footer: 90,
+    header: 60
+  ),
+  positive: (
+    one: 1,
+    two: 2
+  ),
+  negative: (
+    one: -1,
+    two: -2
+  )
+);
+
+// Social Media | social(type, facebook);
+@function social($sm, $def: 'default') {
+    @return map-get(map-get($social-colors, $sm), $def);
+}
+$social-colors: (
+  type: (
+    facebook: #3B5998,
+    google: #db4437,
+    twitter: #55acee,
+    pinterest: #bd081c,
+    tumblr: #34465d,
+    linkedin: #0077B5
+  ),
+  hover: (
+    facebook: lighten(#3B5998, 20%),
+    google: lighten(#db4437, 20%),
+    twitter: lighten(#55acee, 20%),
+    pinterest: lighten(#bd081c, 20%),
+    tumblr: lighten(#34465d, 20%),
+    linkedin: lighten(#0077B5, 20%)
+  )
+);

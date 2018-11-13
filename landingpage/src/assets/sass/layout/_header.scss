@@ -1,0 +1,85 @@
+.header-brief {
+    height: 350px;
+    position: relative;
+    background: #fff;
+
+    &__brand {
+        font-size: 25vw;
+        font-weight: 900;
+        color: #fcfcfc;
+        position: absolute;
+        left: 3rem;
+        top: -300px;
+        @include transform(rotate(-15deg));
+        @include breakpoint(992) {
+            top: -100px;
+        }
+        @include breakpoint(768) {
+            top: 0;
+        }
+    }
+
+    &__back {
+        height: 60px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 10px;
+        @include flexbox();
+        @include justify-content(flex-start);
+        @include align-items(center);
+
+        a {
+            display: block;
+            &:hover svg polygon {
+                fill: $gold-d;
+                @include transition(all 0.3s cubic-bezier(.17, .67, .83, .67));
+            }
+
+            svg {
+                width: 40px;
+                height: 25px;
+            }
+        }
+    }
+
+    &__slogan {
+        width: 1080px;
+        padding: 30px;
+        position: absolute;
+        bottom: 80px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        @include breakpoint(1080) {
+            width: 100%;
+        }
+
+        h2 {
+            font-size: 3.5rem;
+            font-weight: 400;
+            margin: 0;
+            font-family: 'Lato';
+            letter-spacing: -1px;
+
+            span {
+                color: $gold-d;
+            }
+        }
+
+        p {
+            font-size: 0.9rem;
+            color: $dimgray;
+            margin: 0;
+        }
+
+        hr {
+            width: 60%;
+            margin: 0 auto;
+            height: 1px;
+            background: $gainsborolight;
+            border: none;
+            position: relative;
+            top: 100px;
+        }
+    }
+}

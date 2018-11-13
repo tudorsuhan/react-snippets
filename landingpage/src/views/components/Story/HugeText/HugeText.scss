@@ -1,0 +1,19 @@
+@import '../../../../assets/sass/modules/_mixins';
+@import '../../../../assets/sass/base/_palette';
+@import '../../../../assets/sass/base/_typography';
+
+.story-text {
+    font-size: 18vw;
+    font-weight: 600;
+    font-family: 'Ubuntu';
+    color: $white-d;
+    left: 0;
+    top: 5rem;
+    @include breakpoint(992) {
+        left: 2rem;
+        top: 4rem;
+    }
+    @include breakpoint(768) {
+        display: none;
+    }
+}

@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik");
+:root {
+  font-size: 18px; }
+
+@media only screen and (min-width: 768px) {
+  :root {
+    font-size: 24px; } }
+
+.calculator {
+  width: 12rem;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 4rem 0 #efefef;
+  margin: 50px auto; }
+  .calculator__display {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 100px 20px 20px;
+    background: #efefef;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #4b4c4c;
+    font-family: 'Rubik'; }
+  .calculator__functions {
+    width: 75%;
+    position: relative;
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0; }
+    .calculator__functions button {
+      width: 45px;
+      height: 45px;
+      margin: 10px 5px 0 20px;
+      border-radius: 45px;
+      border: none;
+      background: #efefef;
+      color: #4b4c4c;
+      font-weight: 600;
+      font-size: 0.95rem;
+      font-family: 'Rubik'; }
+  .calculator__operations {
+    float: right;
+    width: 25%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 0; }
+    .calculator__operations button {
+      width: 45px;
+      height: 45px;
+      margin: 10px 5px;
+      border-radius: 45px;
+      border: none;
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.95rem;
+      font-family: 'Rubik'; }
+      .calculator__operations button:nth-child(1) {
+        background: #ed1e79; }
+      .calculator__operations button:nth-child(2) {
+        background: #f15a24; }
+      .calculator__operations button:nth-child(3) {
+        background: #009245; }
+      .calculator__operations button:nth-child(4) {
+        background: #ff0000; }
+      .calculator__operations button:nth-child(5) {
+        background: #39b54a;
+        width: 180px;
+        position: relative;
+        right: 70px; }
+  .calculator__numbers {
+    width: 75%;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    align-items: center; }
+    .calculator__numbers button {
+      width: 45px;
+      height: 45px;
+      margin: 10px 5px 10px 20px;
+      border-radius: 45px;
+      border: none;
+      background: transparent;
+      color: #4b4c4c;
+      font-weight: 600;
+      font-size: 0.95rem;
+      font-family: 'Rubik'; }
+
+:root {
+  font-size: 18px; }
+
+@media only screen and (min-width: 768px) {
+  :root {
+    font-size: 24px; } }

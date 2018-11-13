@@ -1,0 +1,52 @@
+@import '../../assets/sass/core/_palette';
+
+.game {
+    display: flex;
+    flex-direction: row;
+
+    &__board {
+        position: relative;
+    }
+
+    &__info {
+        margin-left: 20px;
+        position: absolute;
+        right: 100px;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: auto;
+
+        .status {
+            position: relative;
+
+            &__history {
+                width: 140px;
+                margin-bottom: 1px;
+
+                button {
+                    width: 100%;
+                    border: 0;
+                    border: 1px solid $midnight-d;
+                    border-radius: 2px;
+                    padding: 7px 12px;
+                    font-size: 0.8rem;
+                    font-weight: 400;
+                    font-family: 'Cabin';
+                    color: $white;
+                    background: $midnight-d;
+
+                    &:focus {
+                        color: $black;
+                        background: $white;
+                        border: 1px solid $midnight-t;
+                    }
+                }
+            }
+        }
+
+        .moves {
+            position: relative;
+        }
+    }
+}
+  

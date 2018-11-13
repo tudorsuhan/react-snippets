@@ -1,0 +1,20 @@
+@import '../../../../assets/sass/modules/_mixins';
+@import '../../../../assets/sass/base/_palette';
+
+.brand-navbar {
+    width: auto;
+    height: 70px;
+    padding: 10px;
+    background: $darkdimgray;
+    cursor: pointer;
+    @include flexbox();
+    @include justify-content(center);
+    @include align-items(center);
+
+    h1 {
+        font-size: 2rem;
+        font-weight: 600;
+        font-family: 'Kalam';
+        color: $white;
+    }
+}

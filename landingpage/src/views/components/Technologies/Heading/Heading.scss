@@ -1,0 +1,14 @@
+@import '../../../../assets/sass/modules/_mixins';
+@import '../../../../assets/sass/base/_palette';
+@import '../../../../assets/sass/base/_typography';
+
+.sh-technologies {
+    @include justify-content(flex-start);
+}
+
+.title-technologies, 
+.subtitle-technologies {
+    font-family: 'Ubuntu';
+    color: $sandybrown-d;
+}
+

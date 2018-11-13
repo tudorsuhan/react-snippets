@@ -1,0 +1,15 @@
+@import '../../../../assets/sass/modules/_mixins';
+@import '../../../../assets/sass/base/_palette';
+@import '../../../../assets/sass/base/_typography';
+
+.sh-pricing {
+    z-index: 100;
+    @include justify-content(flex-end);
+}
+
+.title-pricing, 
+.subtitle-pricing {
+    font-family: 'Ubuntu';
+    color: $darkdimgray;
+    text-align: right;
+}
