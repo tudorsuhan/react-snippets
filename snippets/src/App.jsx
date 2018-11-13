@@ -1,7 +1,12 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { BrowserRouter } from 'react-router-dom';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import { BrowserRouter } from 'react-router-dom'
+import { Provider } from 'react-redux'
+import configureStore from './store/configureStore'
+
 import Routes from './rooter/Router';
+
+const store = configureStore()
 
 export default class App extends Component {
 
@@ -12,9 +17,11 @@ export default class App extends Component {
     render() {
         const { history } = this.props;
         return(
-            <BrowserRouter history={history}>
-                <Routes />
-            </BrowserRouter>
+            <Provider store={store}>
+                <BrowserRouter history={history}>
+                    <Routes />
+                </BrowserRouter>
+            </Provider>
         );
     }
 }
