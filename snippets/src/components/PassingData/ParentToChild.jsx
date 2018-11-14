@@ -12,25 +12,29 @@ export default class DataParentToChild extends Component {
             inputValue: event.target.value
         })
     }
+    handleSubmit = (event) => {
+        event.preventDefault()
+        this.setState({
+            inputValue: event.target.value
+        })
+    }
     render() {
         const { inputValue } = this.state
         return (
             <div>
-                <form action="">
-                    <input type="text" value={inputValue} onChange={this.handleChange} />
-                </form>
-                {/* <Input value={inputValue} onChange={this.handleChange} /> */}
-                <div>Data in parent: {inputValue}</div>
+                <Input value={inputValue} onChange={this.handleChange} onSubmit={this.handleSubmit} />
+                <div>Data in PARENT: {inputValue}</div>
             </div>
         )
     }
 }
 
-// const Input = ({ handleChange }) => (
-//     <div>
-//         <form action="">
-//             <input type="text" onChange={handleChange} />
-//         </form>
-//         <div>Data from parent: </div>
-//     </div>
-// )
+const Input = ({ value, onChange, onSubmit }) => (
+    <div>
+        <form action="" onSubmit={onSubmit}>
+            <input type="text" value={value} onChange={onChange} />
+            <input type="submit" value="Submit"/>
+        </form>
+        <div>Data from PARENT in CHILD: {value}</div>
+    </div>
+)
