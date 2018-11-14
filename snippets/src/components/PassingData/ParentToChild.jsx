@@ -12,12 +12,6 @@ export default class DataParentToChild extends Component {
             inputValue: event.target.value
         })
     }
-    handleSubmit = (event) => {
-        event.preventDefault()
-        this.setState({
-            inputValue: event.target.value
-        })
-    }
     render() {
         const { inputValue } = this.state
         return (
@@ -29,9 +23,9 @@ export default class DataParentToChild extends Component {
     }
 }
 
-const Input = ({ value, onChange, onSubmit }) => (
+const Input = ({ value, onChange }) => (
     <div>
-        <form action="" onSubmit={onSubmit}>
+        <form action="">
             <input type="text" value={value} onChange={onChange} />
             <input type="submit" value="Submit"/>
         </form>
