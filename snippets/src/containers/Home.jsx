@@ -26,6 +26,7 @@ export default class Home extends Component {
                     <li><Link to="/list">List</Link></li>
                     <li><Link to="/pass-props-to-other-component">Pass Props To Other Component</Link></li>
                     <li><Link to="/redux-fetch">Fetch data with REDUX</Link></li>
+                    <li><Link to="/pass-data-from-child-to-parent">Pass data from CHILD to PARENT</Link></li>
                 </ul>
             </main>
         );

@@ -13,7 +13,10 @@ import Counter from '../components/Counter';
 import SearchFilterList from '../components/SearchFilterList';
 import Search from '../components/Search';
 import CurrencyConverter from '../components/CurrencyConverter';
-import ReduxFetch from '../components/Redux/ReduxFetch';
+
+import DataChildToParent from '../components/PassingData/ChildToParent';
+
+import FetchDataWithRedux from '../components/Redux/ReduxFetch';
 
 import FormValidation from '../components/Validation/FormValidation';
 import ReactValidation from '../components/Validation/ReactValidation';
@@ -21,11 +24,11 @@ import ReactValidation from '../components/Validation/ReactValidation';
 import List from '../components/Optimization/List';
 import Properties from '../components/Optimization/PassProps';
 
-import Fetch from '../components/Data/Fetch';
-import Axios from '../components/Data/Axios';
-import AsyncAwait from '../components/Data/AsyncAwait';
-import FetchWithHOCs from '../components/Data/HOCs';
-import RenderPropApproach from '../components/Data/RenderProps';
+import Fetch from '../components/FetchData/Fetch';
+import Axios from '../components/FetchData/Axios';
+import AsyncAwait from '../components/FetchData/AsyncAwait';
+import FetchWithHOCs from '../components/FetchData/HOCs';
+import RenderPropApproach from '../components/FetchData/RenderProps';
 
 const Routes = () => (
     <Switch>
@@ -49,7 +52,8 @@ const Routes = () => (
         <Route path="/react-validation" component={ReactValidation} />
         <Route path="/list" component={List} />
         <Route path="/pass-props-to-other-component" component={Properties} />
-        <Route path="/redux-fetch" component={ReduxFetch} />
+        <Route path="/redux-fetch" component={FetchDataWithRedux} />
+        <Route path="/pass-data-from-child-to-parent" component={DataChildToParent} />
     </Switch>
 );
 
