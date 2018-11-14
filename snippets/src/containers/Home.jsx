@@ -26,6 +26,7 @@ const Home = () => (
             <li><Link to="/redux-fetch">Fetch data with REDUX</Link></li>
             <li><Link to="/pass-data-from-child-to-parent">Pass data from CHILD to PARENT</Link></li>
             <li><Link to="/pass-data-from-parent-to-child">Pass data from PARENT to CHILD</Link></li>
+            <li><Link to="/pass-event-from-child-to-parent">Pass EVENT from CHILD to PARENT</Link></li>
         </ul>
     </main>
 )
