@@ -17,9 +17,10 @@ export function fetchPostsSuccess(payload) {
     }
 }
 
-export function fetchPostsError() {
+export function fetchPostsError(error) {
     return {
-        type: FETCH_ERROR
+        type: FETCH_ERROR,
+        error
     }
 }
 

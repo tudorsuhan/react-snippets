@@ -13,7 +13,7 @@ import Counter from '../components/Counter';
 import SearchFilterList from '../components/SearchFilterList';
 import Search from '../components/Search';
 import CurrencyConverter from '../components/CurrencyConverter';
-import FetchDataWithRedux from '../components/Redux/ReduxFetch';
+import ReduxFetch from '../components/Redux/ReduxFetch';
 
 import FormValidation from '../components/Validation/FormValidation';
 import ReactValidation from '../components/Validation/ReactValidation';
@@ -49,7 +49,7 @@ const Routes = () => (
         <Route path="/react-validation" component={ReactValidation} />
         <Route path="/list" component={List} />
         <Route path="/pass-props-to-other-component" component={Properties} />
-        <Route path="/redux-fetch" component={FetchDataWithRedux} />
+        <Route path="/redux-fetch" component={ReduxFetch} />
     </Switch>
 );
 

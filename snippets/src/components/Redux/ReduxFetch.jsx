@@ -3,8 +3,14 @@ import { connect } from 'react-redux'
 import { fetchPostsWithRedux } from '../../actions/actionCreators'
 
 class ReduxFetch extends Component {
+    // componentDidMount() {
+    //     this.props.fetchPostsWithRedux()
+    // }
     render() {
-        return <div>DIV</div>;
+        console.log(this.props.posts)
+        return (
+            <div>DIV</div>
+        )
     }
 }
 
