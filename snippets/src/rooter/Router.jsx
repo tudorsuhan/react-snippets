@@ -15,6 +15,7 @@ import Search from '../components/Search';
 import CurrencyConverter from '../components/CurrencyConverter';
 
 import DataChildToParent from '../components/PassingData/ChildToParent';
+import DataParentToChild from '../components/PassingData/ParentToChild';
 
 import FetchDataWithRedux from '../components/Redux/ReduxFetch';
 
@@ -54,6 +55,7 @@ const Routes = () => (
         <Route path="/pass-props-to-other-component" component={Properties} />
         <Route path="/redux-fetch" component={FetchDataWithRedux} />
         <Route path="/pass-data-from-child-to-parent" component={DataChildToParent} />
+        <Route path="/pass-data-from-parent-to-child" component={DataParentToChild} />
     </Switch>
 );
 
