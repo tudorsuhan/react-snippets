@@ -1,4 +1,101 @@
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css");
+.dashboard {
+  position: relative;
+  padding: 20px; }
+  .dashboard-title {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #333;
+    text-decoration: underline;
+    padding: 0 10px; }
+  .dashboard-grid {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    position: relative; }
+    .dashboard-grid .toggle,
+    .dashboard-grid .validation,
+    .dashboard-grid .search,
+    .dashboard-grid .fetchdata,
+    .dashboard-grid .performance,
+    .dashboard-grid .passingdata,
+    .dashboard-grid .other {
+      width: calc(92% / 4);
+      margin: 10px; }
+      @media (max-width: 1080px) {
+        .dashboard-grid .toggle,
+        .dashboard-grid .validation,
+        .dashboard-grid .search,
+        .dashboard-grid .fetchdata,
+        .dashboard-grid .performance,
+        .dashboard-grid .passingdata,
+        .dashboard-grid .other {
+          width: calc(92% / 3); } }
+      @media (max-width: 853px) {
+        .dashboard-grid .toggle,
+        .dashboard-grid .validation,
+        .dashboard-grid .search,
+        .dashboard-grid .fetchdata,
+        .dashboard-grid .performance,
+        .dashboard-grid .passingdata,
+        .dashboard-grid .other {
+          width: calc(90% / 2); } }
+      @media (max-width: 533px) {
+        .dashboard-grid .toggle,
+        .dashboard-grid .validation,
+        .dashboard-grid .search,
+        .dashboard-grid .fetchdata,
+        .dashboard-grid .performance,
+        .dashboard-grid .passingdata,
+        .dashboard-grid .other {
+          width: 100%; } }
+      .dashboard-grid .toggle-title,
+      .dashboard-grid .validation-title,
+      .dashboard-grid .search-title,
+      .dashboard-grid .fetchdata-title,
+      .dashboard-grid .performance-title,
+      .dashboard-grid .passingdata-title,
+      .dashboard-grid .other-title {
+        font-size: 1rem;
+        font-weight: 400;
+        color: #777;
+        margin: 0;
+        padding: 7px 10px;
+        background: #f9f9f9;
+        border-radius: 2px; }
+      .dashboard-grid .toggle-wrapper,
+      .dashboard-grid .validation-wrapper,
+      .dashboard-grid .search-wrapper,
+      .dashboard-grid .fetchdata-wrapper,
+      .dashboard-grid .performance-wrapper,
+      .dashboard-grid .passingdata-wrapper,
+      .dashboard-grid .other-wrapper {
+        padding: 10px;
+        background: #fff;
+        border: 1px solid #f9f9f9; }
+      .dashboard-grid .toggle-item a,
+      .dashboard-grid .validation-item a,
+      .dashboard-grid .search-item a,
+      .dashboard-grid .fetchdata-item a,
+      .dashboard-grid .performance-item a,
+      .dashboard-grid .passingdata-item a,
+      .dashboard-grid .other-item a {
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: #bbb;
+        transition: all 0.3s ease; }
+        .dashboard-grid .toggle-item a:hover,
+        .dashboard-grid .validation-item a:hover,
+        .dashboard-grid .search-item a:hover,
+        .dashboard-grid .fetchdata-item a:hover,
+        .dashboard-grid .performance-item a:hover,
+        .dashboard-grid .passingdata-item a:hover,
+        .dashboard-grid .other-item a:hover {
+          will-change: all;
+          text-decoration: underline;
+          color: #777; }
+
 .red {
   background: red !important; }
 
