@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import ErrorBoundary from '../Utils/ErrorBoundary'
 
 export default class DataParentToChild extends Component {
     constructor(props) {
@@ -15,10 +16,10 @@ export default class DataParentToChild extends Component {
     render() {
         const { inputValue } = this.state
         return (
-            <div>
+            <ErrorBoundary>
                 <Input value={inputValue} onChange={this.handleChange} onSubmit={this.handleSubmit} />
                 <div>Data in PARENT: {inputValue}</div>
-            </div>
+            </ErrorBoundary>
         )
     }
 }
