@@ -1,38 +1,29 @@
-import {
-    FETCH_REQUEST,
-    FETCH_SUCCESS,
-    FETCH_ERROR
-} from './actionTypes'
+import { FETCH_REQUEST, FETCH_SUCCESS, FETCH_ERROR } from './actionTypes'
 
-export function fetchPostsRequest() {
-    return {
-        type: FETCH_REQUEST
-    }
-}
+export const fetchPostsRequest = () => ({
+    type: FETCH_REQUEST
+})
 
-export function fetchPostsSuccess(payload) {
-    return {
-        type: FETCH_SUCCESS,
-        payload
-    }
-}
+export const fetchPostsSuccess = (payload) => ({
+    type: FETCH_SUCCESS,
+    payload
+})
 
-export function fetchPostsError(error) {
-    return {
-        type: FETCH_ERROR,
-        error
-    }
-}
+export const fetchPostsError = (error) => ({
+    type: FETCH_ERROR,
+    error
+})
 
 export function fetchPostsWithRedux() {
     return (dispatch) => {
         dispatch(fetchPostsRequest());
-        return fetchPosts().then(([response, json]) => {
-            if (response.status === 200) {
-                dispatch(fetchPostsSuccess(json))
-            } else {
-                dispatch(fetchPostsError())
-            }
+        return fetchPosts()
+            .then(([response, json]) => {
+                if (response.status === 200) {
+                    dispatch(fetchPostsSuccess(json))
+                } else {
+                    dispatch(fetchPostsError())
+                }
         })
     }
 }

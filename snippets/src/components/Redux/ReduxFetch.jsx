@@ -14,11 +14,13 @@ class ReduxFetch extends Component {
     }
 }
 
-function mapStateToProps(state){
-	return {
-        posts: state.posts
-    }
-}
+// const mapDispatchToProps = () => ({
+//     fetchPostsWithRedux
+// })
+
+const mapStateToProps = (state) => ({
+	posts: state.posts
+})
 
 const FetchDataWithRedux = connect(
     mapStateToProps, 
@@ -26,3 +28,8 @@ const FetchDataWithRedux = connect(
 )(ReduxFetch)
 
 export default FetchDataWithRedux
+
+/**
+ * https://stackoverflow.com/questions/39813984/how-to-fetch-data-through-api-in-redux
+ * http://jsfiddle.net/cdagli/b2uq8704/6/
+ */
