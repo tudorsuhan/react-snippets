@@ -1,7 +1,8 @@
 import { FETCH_REQUEST, FETCH_SUCCESS, FETCH_ERROR } from './actionTypes'
 
-export const fetchPostsRequest = () => ({
-    type: FETCH_REQUEST
+export const fetchPostsRequest = (payload) => ({
+    type: FETCH_REQUEST,
+    payload
 })
 
 export const fetchPostsSuccess = (payload) => ({
@@ -9,12 +10,12 @@ export const fetchPostsSuccess = (payload) => ({
     payload
 })
 
-export const fetchPostsError = (error) => ({
+export const fetchPostsError = (payload) => ({
     type: FETCH_ERROR,
-    error
+    payload
 })
 
-export function fetchPostsWithRedux() {
+export const fetchPostsWithRedux = () => {
     return (dispatch) => {
         dispatch(fetchPostsRequest());
         return fetchPosts()
@@ -28,7 +29,7 @@ export function fetchPostsWithRedux() {
     }
 }
 
-export function fetchPosts() {
+export const fetchPosts = () => {
     const URL = "http://android.softwsp.com/wp-json/wp/v2/posts?per_page=20";
     return fetch(URL, {
             method: 'GET'

@@ -1,13 +1,24 @@
 import { FETCH_REQUEST, FETCH_SUCCESS, FETCH_ERROR } from '../actions/actionTypes'
 
-const fetchReducer = (state = {}, action) => {
+const fetchReducer = (state = { posts: [], loading: false, error: null }, action) => {
     switch (action.type) {
         case FETCH_REQUEST:
-            return state
+            return { 
+                ...state, 
+                loading: true 
+            }
         case FETCH_SUCCESS:
-            return { ...state, posts: action.payload }
+            return { 
+                ...state, 
+                loading: false, 
+                posts: action.payload 
+            }
         case FETCH_ERROR:
-            return action.error
+            return { 
+                ...state, 
+                loading: false, 
+                error: action.error 
+            }
         default:
             return state
     }
