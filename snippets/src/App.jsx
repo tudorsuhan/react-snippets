@@ -17,7 +17,6 @@ export default class App extends Component {
 
     render() {
         const { history } = this.props;
-        console.log(store.getState())
         return(
             <Provider store={store}>
                 <BrowserRouter history={history}>
