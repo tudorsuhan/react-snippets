@@ -29,7 +29,7 @@ export function fetchPostsWithRedux() {
 }
 
 export function fetchPosts() {
-    const URL = "https://jsonplaceholder.typicode.com/posts";
+    const URL = "http://android.softwsp.com/wp-json/wp/v2/posts?per_page=20";
     return fetch(URL, {
             method: 'GET'
         })

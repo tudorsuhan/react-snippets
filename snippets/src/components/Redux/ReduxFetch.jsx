@@ -3,20 +3,25 @@ import { connect } from 'react-redux'
 import { fetchPostsWithRedux } from '../../actions/actionCreators'
 
 class ReduxFetch extends Component {
-    // componentDidMount() {
-    //     this.props.fetchPostsWithRedux()
-    // }
+    componentDidMount() {
+        this.props.fetchPostsWithRedux()
+    }
     render() {
-        console.log(this.props.posts)
+        console.log(this.props)
         return (
-            <div>DIV</div>
+            <ul>
+				{
+                    this.props.posts && 
+                    this.props.posts.map((post) =>{
+                        return(
+                            <li key={post.id}>{post.title.rendered}</li>
+                        )
+                    })
+                }
+            </ul>
         )
     }
 }
-
-// const mapDispatchToProps = () => ({
-//     fetchPostsWithRedux
-// })
 
 const mapStateToProps = (state) => ({
 	posts: state.posts
@@ -24,7 +29,7 @@ const mapStateToProps = (state) => ({
 
 const FetchDataWithRedux = connect(
     mapStateToProps, 
-    fetchPostsWithRedux
+    { fetchPostsWithRedux }
 )(ReduxFetch)
 
 export default FetchDataWithRedux
