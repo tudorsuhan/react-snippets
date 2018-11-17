@@ -46,7 +46,6 @@ const Home = () => (
                     <div className="fetchdata-item"><Link to="/get-data-with-hocs">Get Data with HOCs</Link></div>
                     <div className="fetchdata-item"><Link to="/get-data-with-render-props">Get Data with RENDER PROPS</Link></div>
                     <div className="fetchdata-item"><Link to="/redux-fetch">Fetch data with REDUX</Link></div>
-                    <div className="fetchdata-item"><Link to="/redux-fetch-with-loading-and-error">Fetch data with REDUX: LOADER and ERRORS</Link></div>
                 </div>
             </div>
 

@@ -19,7 +19,6 @@ import EventChildToParent from '../components/PassingData/ChildToParentEvent';
 import DataParentToChild from '../components/PassingData/ParentToChild';
 
 import FetchDataWithRedux from '../components/Redux/ReduxFetch';
-import ReduxFetchLoaderError from '../components/Redux/ReduxFetchLoaderError';
 
 import FormValidation from '../components/Validation/FormValidation';
 import ReactValidation from '../components/Validation/ReactValidation';
@@ -56,7 +55,6 @@ const Routes = () => (
         <Route path="/list" component={List} />
         <Route path="/pass-props-to-other-component" component={Properties} />
         <Route path="/redux-fetch" component={FetchDataWithRedux} />
-        <Route path="/redux-fetch-with-loading-and-error" component={ReduxFetchLoaderError} />
         <Route path="/pass-data-from-child-to-parent" component={DataChildToParent} />
         <Route path="/pass-data-from-parent-to-child" component={DataParentToChild} />
         <Route path="/pass-event-from-child-to-parent" component={EventChildToParent} />

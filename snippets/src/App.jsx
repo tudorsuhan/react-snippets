@@ -16,10 +16,9 @@ export default class App extends Component {
     }
 
     render() {
-        const { history } = this.props;
         return(
             <Provider store={store}>
-                <BrowserRouter history={history}>
+                <BrowserRouter>
                     <Routes />
                 </BrowserRouter>
             </Provider>
