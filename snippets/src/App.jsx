@@ -5,9 +5,11 @@ import { Provider } from 'react-redux'
 import configureStore from './store/configureStore'
 import './styles/app.css'
 
-import Routes from './rooter/Router';
+import Routes from './rooter/Router'
 
 const store = configureStore()
+
+console.log(store.getState())
 
 export default class App extends Component {
 

@@ -7,7 +7,6 @@ class ReduxFetch extends Component {
         this.props.fetchPostsWithRedux()
     }
     render() {
-        console.log(this.props)
         return (
             <ul>
 				{
