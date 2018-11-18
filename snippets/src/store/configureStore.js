@@ -28,6 +28,9 @@ const configureStore = () => {
         persistentState,
         composeWithDevTools(applyMiddleware(thunkMiddleware, composedEnhancers))
     )
+    /**
+     * Persisting the state to the localStorage
+     */
     store.subscribe(throttle(() => {
         saveState(store.getState())
     }, 1000))
