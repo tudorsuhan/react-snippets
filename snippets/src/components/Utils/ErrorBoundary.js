@@ -8,7 +8,6 @@ export default class ErrorBoundary extends Component {
             errorInfo: null 
         }
     }
-    
     componentDidCatch(error, errorInfo) {
         // Catch errors in any components below and re-render with error message
         this.setState({
@@ -17,7 +16,6 @@ export default class ErrorBoundary extends Component {
         })
         // You can also log error messages to an error reporting service here
     }
-    
     render() {
         if (this.state.errorInfo) {
             // Error path

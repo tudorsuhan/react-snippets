@@ -1,18 +1,19 @@
-import React, { Component } from 'react'
-import axios from 'axios'
+import React, { Component } from 'react';
+import axios from 'axios';
 
-const API = 'https://hn.algolia.com/api/v1/search?query='
-const DEFAULT_QUERY = 'react-native'
+const API = 'https://hn.algolia.com/api/v1/search?query=';
+const DEFAULT_QUERY = 'react-native';
 
 export default class AsyncAwait extends Component {
     constructor(props) {
-        super(props)
+        super(props);
         this.state = {
             hits: [],
             isLoading: false,
-            error: null
+            error: null,
         }
     }
+
     async componentDidMount() {
         this.setState({ isLoading: true });
         try {
@@ -20,15 +21,16 @@ export default class AsyncAwait extends Component {
 
             this.setState({
                 hits: result.data.hits,
-                isLoading: false
+                isLoading: false,
             });
         } catch (error) {
             this.setState({
                 error,
-                isLoading: false
+                isLoading: false,
             });
         }
     }
+
     render() {
         const { hits, isLoading, error } = this.state;
         if (error) return <div>{error.message}</div>;

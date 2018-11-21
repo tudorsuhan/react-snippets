@@ -3,10 +3,10 @@ import styled from 'styled-components'
 import { pure } from 'recompose'
 
 /**
- * Imporove PERFORMANCE preventing component re-rendering using 
+ * Improve PERFORMANCE preventing component re-rendering using 
  * 'shouldComponentUpdate' || 'PureComponent'
  */
-const list = new Array(1000).fill(0).map((v, i) => i)
+const list = new Array(500).fill(0).map((v, i) => i)
 console.log(list)
 
 export default class List500 extends Component {
