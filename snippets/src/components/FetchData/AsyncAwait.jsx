@@ -11,7 +11,7 @@ export default class AsyncAwait extends Component {
             hits: [],
             isLoading: false,
             error: null,
-        }
+        };
     }
 
     async componentDidMount() {
@@ -38,11 +38,9 @@ export default class AsyncAwait extends Component {
         return (
             <ul>
                 {hits.map(hit =>
-                    <li key={hit.objectID}>
-                        <a href={hit.url}>{hit.title}</a>
-                    </li>
+                    <li key={hit.objectID}><a href={hit.url}>{hit.title}</a></li>
                 )}
             </ul>
-        )
+        );
     }
 }
