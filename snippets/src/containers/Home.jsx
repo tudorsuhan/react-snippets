@@ -36,6 +36,14 @@ const Home = () => (
                 </div>
             </div>
 
+            {/** React State */}
+            <div className="reactstate">
+                <div className="reactstate-title">React State</div>
+                <div className="reactstate-wrapper">
+                    <div className="reactstate-item"><Link to="/manage-react-state-with-arrays">Manage React State With Arrays</Link></div>
+                </div>
+            </div>
+
             {/** Fetch Data */}
             <div className="fetchdata">
                 <div className="fetchdata-title">Fetch Data</div>

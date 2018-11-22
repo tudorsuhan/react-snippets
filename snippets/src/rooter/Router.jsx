@@ -18,6 +18,8 @@ import DataChildToParent from '../components/PassingData/ChildToParent';
 import EventChildToParent from '../components/PassingData/ChildToParentEvent';
 import DataParentToChild from '../components/PassingData/ParentToChild';
 
+import ManageStateWithArrays from '../components/ReactState/ManageStateWithArrays'
+
 import FetchDataWithRedux from '../components/Redux/ReduxFetch';
 
 import FormValidation from '../components/Validation/FormValidation';
@@ -58,6 +60,7 @@ const Routes = () => (
         <Route path="/pass-data-from-child-to-parent" component={DataChildToParent} />
         <Route path="/pass-data-from-parent-to-child" component={DataParentToChild} />
         <Route path="/pass-event-from-child-to-parent" component={EventChildToParent} />
+        <Route path="/manage-react-state-with-arrays" component={ManageStateWithArrays} />
     </Switch>
 );
 

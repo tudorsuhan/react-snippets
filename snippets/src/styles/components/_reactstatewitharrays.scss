@@ -1,0 +1,128 @@
+.arraystate {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: row wrap;
+
+    .list, 
+    .alphabet,
+    .numbers {
+        width: calc(92% / 3);
+        margin: 10px;
+        padding: 20px;
+        border: 1px solid #eee;
+        border-radius: 5px;
+        @media (max-width: 992px) {
+            width: calc(92% / 2);
+        }
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+
+        li {
+            list-style: none;
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: #333;
+            margin: 5px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .li-button {
+                border: none;
+                border-radius: 15px;
+                padding: 5px 20px;
+                border: 2px solid #333;
+                background: #fff;
+                color: #333;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                text-transform: uppercase;
+                font-size: 0.7rem;
+                font-weight: 500;
+
+                &:hover {
+                    background: #333;
+                    color: #fff;
+                }
+            }
+        }
+
+        input {
+            padding: 10px 15px;
+            border: none;
+            border: 2px solid #ccc;
+            border-radius: 25px;
+            font-size: 0.85rem;
+            font-weight: 400;
+            color: #333;
+            margin-top: 20px;
+            width: 100%;
+            transition: all 0.3s ease;
+
+            &:focus {
+                border: 2px solid #333;
+                outline: none;
+            }
+        }
+
+        .ul-button {
+            margin-top: 10px;
+            border: none;
+            border-radius: 15px;
+            padding: 7px 20px;
+            border: 2px solid #333;
+            background: #fff;
+            color: #333;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            font-size: 0.7rem;
+            font-weight: 500;
+
+            &:hover {
+                background: #333;
+                color: #fff;
+            }
+        }
+
+        .numbers-buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-flow: row wrap;
+
+            .numbers-btn {
+                width: calc(94% / 2);
+            }
+        }
+    }
+
+    .clearreset {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        .clearreset-btn {
+            margin: 10px;
+            border: none;
+            border-radius: 15px;
+            padding: 7px 20px;
+            border: 2px solid #333;
+            background: #fff;
+            color: #333;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            font-size: 0.7rem;
+            font-weight: 500;
+
+            &:hover {
+                background: #333;
+                color: #fff;
+            }
+        }
+    }
+}

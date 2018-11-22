@@ -20,6 +20,7 @@
     .dashboard-grid .fetchdata,
     .dashboard-grid .performance,
     .dashboard-grid .passingdata,
+    .dashboard-grid .reactstate,
     .dashboard-grid .other {
       width: calc(92% / 4);
       margin: 10px; }
@@ -30,6 +31,7 @@
         .dashboard-grid .fetchdata,
         .dashboard-grid .performance,
         .dashboard-grid .passingdata,
+        .dashboard-grid .reactstate,
         .dashboard-grid .other {
           width: calc(92% / 3); } }
       @media (max-width: 853px) {
@@ -39,6 +41,7 @@
         .dashboard-grid .fetchdata,
         .dashboard-grid .performance,
         .dashboard-grid .passingdata,
+        .dashboard-grid .reactstate,
         .dashboard-grid .other {
           width: calc(90% / 2); } }
       @media (max-width: 533px) {
@@ -48,6 +51,7 @@
         .dashboard-grid .fetchdata,
         .dashboard-grid .performance,
         .dashboard-grid .passingdata,
+        .dashboard-grid .reactstate,
         .dashboard-grid .other {
           width: 100%; } }
       .dashboard-grid .toggle-title,
@@ -56,6 +60,7 @@
       .dashboard-grid .fetchdata-title,
       .dashboard-grid .performance-title,
       .dashboard-grid .passingdata-title,
+      .dashboard-grid .reactstate-title,
       .dashboard-grid .other-title {
         font-size: 1rem;
         font-weight: 400;
@@ -70,6 +75,7 @@
       .dashboard-grid .fetchdata-wrapper,
       .dashboard-grid .performance-wrapper,
       .dashboard-grid .passingdata-wrapper,
+      .dashboard-grid .reactstate-wrapper,
       .dashboard-grid .other-wrapper {
         padding: 10px;
         background: #fff;
@@ -80,6 +86,7 @@
       .dashboard-grid .fetchdata-item a,
       .dashboard-grid .performance-item a,
       .dashboard-grid .passingdata-item a,
+      .dashboard-grid .reactstate-item a,
       .dashboard-grid .other-item a {
         font-size: 0.9rem;
         font-weight: 400;
@@ -91,10 +98,135 @@
         .dashboard-grid .fetchdata-item a:hover,
         .dashboard-grid .performance-item a:hover,
         .dashboard-grid .passingdata-item a:hover,
+        .dashboard-grid .reactstate-item a:hover,
         .dashboard-grid .other-item a:hover {
           will-change: all;
           text-decoration: underline;
           color: #777; }
+
+.arraystate {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: row wrap; }
+  .arraystate .list,
+  .arraystate .alphabet,
+  .arraystate .numbers {
+    width: calc(92% / 3);
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 5px; }
+    @media (max-width: 992px) {
+      .arraystate .list,
+      .arraystate .alphabet,
+      .arraystate .numbers {
+        width: calc(92% / 2); } }
+    @media (max-width: 768px) {
+      .arraystate .list,
+      .arraystate .alphabet,
+      .arraystate .numbers {
+        width: 100%; } }
+    .arraystate .list li,
+    .arraystate .alphabet li,
+    .arraystate .numbers li {
+      list-style: none;
+      font-size: 0.9rem;
+      font-weight: 400;
+      color: #333;
+      margin: 5px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start; }
+      .arraystate .list li .li-button,
+      .arraystate .alphabet li .li-button,
+      .arraystate .numbers li .li-button {
+        border: none;
+        border-radius: 15px;
+        padding: 5px 20px;
+        border: 2px solid #333;
+        background: #fff;
+        color: #333;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        font-weight: 500; }
+        .arraystate .list li .li-button:hover,
+        .arraystate .alphabet li .li-button:hover,
+        .arraystate .numbers li .li-button:hover {
+          background: #333;
+          color: #fff; }
+    .arraystate .list input,
+    .arraystate .alphabet input,
+    .arraystate .numbers input {
+      padding: 10px 15px;
+      border: none;
+      border: 2px solid #ccc;
+      border-radius: 25px;
+      font-size: 0.85rem;
+      font-weight: 400;
+      color: #333;
+      margin-top: 20px;
+      width: 100%;
+      transition: all 0.3s ease; }
+      .arraystate .list input:focus,
+      .arraystate .alphabet input:focus,
+      .arraystate .numbers input:focus {
+        border: 2px solid #333;
+        outline: none; }
+    .arraystate .list .ul-button,
+    .arraystate .alphabet .ul-button,
+    .arraystate .numbers .ul-button {
+      margin-top: 10px;
+      border: none;
+      border-radius: 15px;
+      padding: 7px 20px;
+      border: 2px solid #333;
+      background: #fff;
+      color: #333;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      font-size: 0.7rem;
+      font-weight: 500; }
+      .arraystate .list .ul-button:hover,
+      .arraystate .alphabet .ul-button:hover,
+      .arraystate .numbers .ul-button:hover {
+        background: #333;
+        color: #fff; }
+    .arraystate .list .numbers-buttons,
+    .arraystate .alphabet .numbers-buttons,
+    .arraystate .numbers .numbers-buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-flow: row wrap; }
+      .arraystate .list .numbers-buttons .numbers-btn,
+      .arraystate .alphabet .numbers-buttons .numbers-btn,
+      .arraystate .numbers .numbers-buttons .numbers-btn {
+        width: calc(94% / 2); }
+  .arraystate .clearreset {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; }
+    .arraystate .clearreset .clearreset-btn {
+      margin: 10px;
+      border: none;
+      border-radius: 15px;
+      padding: 7px 20px;
+      border: 2px solid #333;
+      background: #fff;
+      color: #333;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      font-size: 0.7rem;
+      font-weight: 500; }
+      .arraystate .clearreset .clearreset-btn:hover {
+        background: #333;
+        color: #fff; }
 
 .red {
   background: red !important; }
