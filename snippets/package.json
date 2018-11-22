@@ -70,9 +70,12 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "chai": "^4.2.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
+    "jsdom": "^13.0.0",
+    "mocha": "^5.2.0",
     "react-internationalization": "^1.1.0",
     "react-validation": "^3.0.7",
     "redux-devtools-extension": "^2.13.5",
