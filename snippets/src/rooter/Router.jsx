@@ -3,16 +3,19 @@ import { Switch, Route } from 'react-router-dom';
 
 import Home from '../containers/Home';
 
-import ToggleButton from '../components/ToggleButton';
-import ToggleClass from '../components/ToggleClass';
 import MouseTracker from '../components/MouseTracker';
-import Filter from '../components/ToggleFilterList';
 import Timer from '../components/Timer';
 import TodoApp from '../components/Todo';
 import Counter from '../components/Counter';
-import SearchFilterList from '../components/SearchFilterList';
-import Search from '../components/Search';
 import CurrencyConverter from '../components/CurrencyConverter';
+import Pagination from '../components/Pagination/Pagination';
+
+import ToggleButton from '../components/Toggle/ToggleButton';
+import ToggleClass from '../components/Toggle/ToggleClass';
+import Filter from '../components/Toggle/ToggleFilterList';
+
+import SearchFilterList from '../components/Search/SearchFilterList';
+import Search from '../components/Search/Search';
 
 import DataChildToParent from '../components/PassingData/ChildToParent';
 import EventChildToParent from '../components/PassingData/ChildToParentEvent';
@@ -61,6 +64,7 @@ const Routes = () => (
         <Route path="/pass-data-from-parent-to-child" component={DataParentToChild} />
         <Route path="/pass-event-from-child-to-parent" component={EventChildToParent} />
         <Route path="/manage-react-state-with-arrays" component={ManageStateWithArrays} />
+        <Route path="/pagination" component={Pagination} />
     </Switch>
 );
 
