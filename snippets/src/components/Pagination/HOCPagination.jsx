@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import { compose } from 'recompose';
 
 const applyUpdateResult = (result) => (prevState) => ({
     hits: [...prevState.hits, ...result.hits],
@@ -35,7 +36,7 @@ export default class Pagination extends Component {
         this.fetchStories(value, 0);
     }
 
-    onPaginatedSearch = () => 
+    onPaginatedSearch = () =>
         this.fetchStories(this.input.value, this.state.page + 1);
 
     fetchStories = async (value, page) => {
@@ -62,10 +63,10 @@ export default class Pagination extends Component {
                     </form>
                 </div>
 
-                <List 
-                    list={hits} 
-                    page={page} 
+                <ListWithLoadingWithPaginated
+                    list={hits}
                     isLoading={isLoading}
+                    page={page}
                     onPaginatedSearch={this.onPaginatedSearch}
                 />
             </div>
@@ -73,20 +74,33 @@ export default class Pagination extends Component {
     }
 }
 
-const List = ({ list, page, isLoading, onPaginatedSearch }) =>
+const withLoading = (Component) => (props) =>
     <Fragment>
-        <div className="list">
-            {list.map(item => <div className="list-row" key={item.objectID}>
-                <a href={item.url}>{item.title}</a>
-            </div>)}
-        </div>
+        <Component {...props} />
         <div className="interactions">
-            { isLoading && <span>Loading...</span> }
+            {props.isLoading && <span>Loading...</span>}
         </div>
+    </Fragment>
+
+const withPaginated = (Component) => (props) =>
+    <Fragment>
+        <Component {...props} />
         <div className="interactions">
             {
-                (page !== null && !isLoading) &&
-                <button type="button" onClick={onPaginatedSearch}>More</button>
+                (props.page !== null && !props.isLoading) &&
+                <button type="button" onClick={props.onPaginatedSearch}>More</button>
             }
         </div>
     </Fragment>
+
+const List = ({ list }) =>
+    <div className="list">
+        {list.map(item => <div className="list-row" key={item.objectID}>
+            <a href={item.url}>{item.title}</a>
+        </div>)}
+    </div>
+
+const ListWithLoadingWithPaginated = compose(
+    withPaginated,
+    withLoading,
+)(List);

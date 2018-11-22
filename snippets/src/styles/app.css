@@ -21,9 +21,14 @@
     .dashboard-grid .performance,
     .dashboard-grid .passingdata,
     .dashboard-grid .reactstate,
+    .dashboard-grid .pagination,
     .dashboard-grid .other {
       width: calc(92% / 4);
-      margin: 10px; }
+      margin: 10px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-flow: row wrap; }
       @media (max-width: 1080px) {
         .dashboard-grid .toggle,
         .dashboard-grid .validation,
@@ -32,6 +37,7 @@
         .dashboard-grid .performance,
         .dashboard-grid .passingdata,
         .dashboard-grid .reactstate,
+        .dashboard-grid .pagination,
         .dashboard-grid .other {
           width: calc(92% / 3); } }
       @media (max-width: 853px) {
@@ -42,6 +48,7 @@
         .dashboard-grid .performance,
         .dashboard-grid .passingdata,
         .dashboard-grid .reactstate,
+        .dashboard-grid .pagination,
         .dashboard-grid .other {
           width: calc(90% / 2); } }
       @media (max-width: 533px) {
@@ -52,6 +59,7 @@
         .dashboard-grid .performance,
         .dashboard-grid .passingdata,
         .dashboard-grid .reactstate,
+        .dashboard-grid .pagination,
         .dashboard-grid .other {
           width: 100%; } }
       .dashboard-grid .toggle-title,
@@ -61,7 +69,9 @@
       .dashboard-grid .performance-title,
       .dashboard-grid .passingdata-title,
       .dashboard-grid .reactstate-title,
+      .dashboard-grid .pagination-title,
       .dashboard-grid .other-title {
+        width: 100%;
         font-size: 1rem;
         font-weight: 400;
         color: #777;
@@ -76,7 +86,9 @@
       .dashboard-grid .performance-wrapper,
       .dashboard-grid .passingdata-wrapper,
       .dashboard-grid .reactstate-wrapper,
+      .dashboard-grid .pagination-wrapper,
       .dashboard-grid .other-wrapper {
+        width: 100%;
         padding: 10px;
         background: #fff;
         border: 1px solid #f9f9f9; }
@@ -87,6 +99,7 @@
       .dashboard-grid .performance-item a,
       .dashboard-grid .passingdata-item a,
       .dashboard-grid .reactstate-item a,
+      .dashboard-grid .pagination-item a,
       .dashboard-grid .other-item a {
         font-size: 0.9rem;
         font-weight: 400;
@@ -99,6 +112,7 @@
         .dashboard-grid .performance-item a:hover,
         .dashboard-grid .passingdata-item a:hover,
         .dashboard-grid .reactstate-item a:hover,
+        .dashboard-grid .pagination-item a:hover,
         .dashboard-grid .other-item a:hover {
           will-change: all;
           text-decoration: underline;

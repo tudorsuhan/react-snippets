@@ -76,6 +76,15 @@ const Home = () => (
                 </div>
             </div>
 
+            {/** Pagination */}
+            <div className="pagination">
+                <div className="pagination-title">Pagination</div>
+                <div className="pagination-wrapper">
+                    <div className="pagination-item"><Link to="/pagination">Pagination</Link></div>
+                    <div className="pagination-item"><Link to="/pagination-hoc">Pagination with a HOC</Link></div>
+                </div>
+            </div>
+
             {/** Other */}
             <div className="other">
                 <div className="other-title">Other</div>
@@ -85,7 +94,6 @@ const Home = () => (
                     <div className="other-item"><Link to="/todo">Todo</Link></div>
                     <div className="other-item"><Link to="/counter">Counter</Link></div>
                     <div className="other-item"><Link to="/curency-converter">Currency Converter</Link></div>
-                    <div className="other-item"><Link to="/pagination">Pagination</Link></div>
                 </div>
             </div>
 

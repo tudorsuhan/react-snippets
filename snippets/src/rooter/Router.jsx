@@ -8,7 +8,9 @@ import Timer from '../components/Timer';
 import TodoApp from '../components/Todo';
 import Counter from '../components/Counter';
 import CurrencyConverter from '../components/CurrencyConverter';
+
 import Pagination from '../components/Pagination/Pagination';
+import HOCPagination from '../components/Pagination/HOCPagination';
 
 import ToggleButton from '../components/Toggle/ToggleButton';
 import ToggleClass from '../components/Toggle/ToggleClass';
@@ -65,6 +67,7 @@ const Routes = () => (
         <Route path="/pass-event-from-child-to-parent" component={EventChildToParent} />
         <Route path="/manage-react-state-with-arrays" component={ManageStateWithArrays} />
         <Route path="/pagination" component={Pagination} />
+        <Route path="/pagination-hoc" component={HOCPagination} />
     </Switch>
 );
 
