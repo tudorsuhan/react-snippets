@@ -12,6 +12,9 @@ import CurrencyConverter from '../components/CurrencyConverter';
 import Pagination from '../components/Pagination/Pagination';
 import HOCPagination from '../components/Pagination/HOCPagination';
 
+import InfiniteScroll from '../components/InfiniteScroll/InfiniteScroll';
+import HOCInfiniteScroll from '../components/InfiniteScroll/HOCInfiniteScroll';
+
 import ToggleButton from '../components/Toggle/ToggleButton';
 import ToggleClass from '../components/Toggle/ToggleClass';
 import Filter from '../components/Toggle/ToggleFilterList';
@@ -68,6 +71,8 @@ const Routes = () => (
         <Route path="/manage-react-state-with-arrays" component={ManageStateWithArrays} />
         <Route path="/pagination" component={Pagination} />
         <Route path="/pagination-hoc" component={HOCPagination} />
+        <Route path="/infinitescroll" component={InfiniteScroll} />
+        <Route path="/infinitescroll-hoc" component={HOCInfiniteScroll} />
     </Switch>
 );
 

@@ -87,7 +87,7 @@ const Home = () => (
 
             {/** Infinite Scroll */}
             <div className="infinitescroll">
-                <div className="infinitescroll-title">Pagination</div>
+                <div className="infinitescroll-title">Infinite Scroll</div>
                 <div className="infinitescroll-wrapper">
                     <div className="infinitescroll-item"><Link to="/infinitescroll">Infinite Scroll</Link></div>
                     <div className="infinitescroll-item"><Link to="/infinitescroll-hoc">Infinite Scroll with a HOC</Link></div>
