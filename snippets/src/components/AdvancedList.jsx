@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import { compose } from 'recompose';
 
 const applyUpdateResult = (result) => (prevState) => ({
@@ -9,39 +9,50 @@ const applyUpdateResult = (result) => (prevState) => ({
 });
 
 const applySetResult = (result) => (prevState) => ({
-    hits: result.hits,
+    hits: [...prevState.hits, ...result.hits],
     page: result.page,
     isError: false,
     isLoading: false,
 });
 
 const applySetError = (prevState) => ({
-    isError: false,
+    isError: true,
     isLoading: false,
 });
 
-const getHackerNewsUrl = (value, page) =>
+const getGackerNewsUrl = (value, page) =>
     `https://hn.algolia.com/api/v1/search?query=${value}&page=${page}&hitsPerPage=100`;
 
 export default class AdvancedListComponent extends Component {
     constructor(props) {
         super(props);
-
         this.state = {
             hits: [],
             page: null,
-            isLoading: false,
             isError: false,
+            isLoading: false,
         };
     }
 
+    onInitialSearch = (event) => {
+        event.preventDefault();
+        const { value } = this.input;
+        if (value === '') {
+            return;
+        }
+        this.fetchStories(value, 0);
+    }
+
     fetchStories = (value, page) => {
-        this.setState({ isLoading: true });
-        fetch(getHackerNewsUrl(value, page))
+        this.setState({ isLoading: true, });
+        fetch(getGackerNewsUrl(value, page))
             .then(response => response.json())
             .then(result => this.onSetResult(result, page))
             .catch(this.onSetError);
     }
+
+    onPaginatedSearch = () =>
+        this.fetchStories(this.input.value, this.state.page + 1);
 
     onSetError = () =>
         this.setState(applySetError);
@@ -74,12 +85,20 @@ export default class AdvancedListComponent extends Component {
     }
 }
 
-const withPaginated = (Component) => (props) =>
+const withLoading = (conditionFn) => (Component) => (props) =>
+    <div>
+        <Component {...props} />
+        <div className="interactions">
+            {conditionFn(props) && <span>Loading...</span>}
+        </div>
+    </div>
+
+const withPaginated = (conditionFn) => (Component) => (props) =>
     <div>
         <Component {...props} />
         <div className="interactions">
             {
-                (props.page !== null && !props.isLoading && props.isError) &&
+                conditionFn(props) &&
                 <div>
                     <div>Something went wrong...</div>
                     <button type="button" onClick={props.onPaginatedSearch}>Try Again</button>
@@ -88,39 +107,23 @@ const withPaginated = (Component) => (props) =>
         </div>
     </div>
 
-const withInfiniteScroll = (Component) =>
+const withInfiniteScroll = (conditionFn) => (Component) =>
     class WithInfiniteScroll extends React.Component {
-        componentDidMount = () => {
+        componentDidMount() {
             window.addEventListener('scroll', this.onScroll, false);
         }
 
-        componentWillMount = () => {
+        componentWillUnmount() {
             window.removeEventListener('scroll', this.onScroll, false);
         }
 
-        onScroll = () => {
-            if (
-                (window.innerHeight + window.scrollY) >= (document.body.offsetHeight - 500) &&
-                this.props.list.length &&
-                !this.props.isLoading &&
-                !this.props.isError
-            ) {
-                this.props.onPaginatedSearch();
-            }
-        }
+        onScroll = () =>
+            conditionFn(this.props) && this.props.onPaginatedSearch();
 
         render() {
             return <Component {...this.props} />;
         }
     }
-
-const withLoading = (Component) => (props) =>
-    <Fragment>
-        <Component {...props} />
-        <div className="interactions">
-            {props.isLoading && <span>Loading...</span>}
-        </div>
-    </Fragment>
 
 const List = ({ list }) =>
     <div className="list">
@@ -129,8 +132,20 @@ const List = ({ list }) =>
         </div>)}
     </div>
 
+const paginatedCondition = props =>
+    props.page !== null && !props.isLoading && props.isError;
+
+const infiniteScrollCondition = props =>
+    (window.innerHeight + window.scrollY) >= (document.body.offsetHeight - 500)
+    && props.list.length
+    && !props.isLoading
+    && !props.isError;
+
+const loadingCondition = props =>
+    props.isLoading;
+
 const AdvancedList = compose(
-    withPaginated,
-    withInfiniteScroll,
-    withLoading,
+    withPaginated(paginatedCondition),
+    withInfiniteScroll(infiniteScrollCondition),
+    withLoading(loadingCondition),
 )(List);
