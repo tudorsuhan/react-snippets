@@ -8,6 +8,7 @@ import Timer from '../components/Timer';
 import TodoApp from '../components/Todo';
 import Counter from '../components/Counter';
 import CurrencyConverter from '../components/CurrencyConverter';
+import AdvancedListComponent from '../components/AdvancedList';
 
 import Pagination from '../components/Pagination/Pagination';
 import HOCPagination from '../components/Pagination/HOCPagination';
@@ -73,6 +74,7 @@ const Routes = () => (
         <Route path="/pagination-hoc" component={HOCPagination} />
         <Route path="/infinitescroll" component={InfiniteScroll} />
         <Route path="/infinitescroll-hoc" component={HOCInfiniteScroll} />
+        <Route path="/react-advanced-list-component" component={AdvancedListComponent} />
     </Switch>
 );
 

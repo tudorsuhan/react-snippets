@@ -103,6 +103,7 @@ const Home = () => (
                     <div className="other-item"><Link to="/todo">Todo</Link></div>
                     <div className="other-item"><Link to="/counter">Counter</Link></div>
                     <div className="other-item"><Link to="/curency-converter">Currency Converter</Link></div>
+                    <div className="other-item"><Link to="/react-advanced-list-component">React Advanced List Component</Link></div>
                 </div>
             </div>
 
