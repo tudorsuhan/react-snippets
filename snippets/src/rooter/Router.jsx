@@ -10,6 +10,8 @@ import Counter from '../components/Counter';
 import CurrencyConverter from '../components/CurrencyConverter';
 import AdvancedListComponent from '../components/AdvancedList';
 
+import SessionLocalStorage from '../components/SessionLocalStorage/SessionLocalStorage';
+
 import Pagination from '../components/Pagination/Pagination';
 import HOCPagination from '../components/Pagination/HOCPagination';
 
@@ -75,6 +77,7 @@ const Routes = () => (
         <Route path="/infinitescroll" component={InfiniteScroll} />
         <Route path="/infinitescroll-hoc" component={HOCInfiniteScroll} />
         <Route path="/react-advanced-list-component" component={AdvancedListComponent} />
+        <Route path="/session-and-localstorage-in-react" component={SessionLocalStorage} />
     </Switch>
 );
 

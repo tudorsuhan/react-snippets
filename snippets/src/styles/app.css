@@ -84,6 +84,7 @@
     .dashboard-grid .reactstate,
     .dashboard-grid .pagination,
     .dashboard-grid .infinitescroll,
+    .dashboard-grid .sessionlocalstorage,
     .dashboard-grid .other {
       width: calc(92% / 4);
       margin: 10px;
@@ -101,6 +102,7 @@
         .dashboard-grid .reactstate,
         .dashboard-grid .pagination,
         .dashboard-grid .infinitescroll,
+        .dashboard-grid .sessionlocalstorage,
         .dashboard-grid .other {
           width: calc(92% / 3); } }
       @media (max-width: 853px) {
@@ -113,6 +115,7 @@
         .dashboard-grid .reactstate,
         .dashboard-grid .pagination,
         .dashboard-grid .infinitescroll,
+        .dashboard-grid .sessionlocalstorage,
         .dashboard-grid .other {
           width: calc(90% / 2); } }
       @media (max-width: 533px) {
@@ -125,6 +128,7 @@
         .dashboard-grid .reactstate,
         .dashboard-grid .pagination,
         .dashboard-grid .infinitescroll,
+        .dashboard-grid .sessionlocalstorage,
         .dashboard-grid .other {
           width: 100%; } }
       .dashboard-grid .toggle-title,
@@ -136,6 +140,7 @@
       .dashboard-grid .reactstate-title,
       .dashboard-grid .pagination-title,
       .dashboard-grid .infinitescroll-title,
+      .dashboard-grid .sessionlocalstorage-title,
       .dashboard-grid .other-title {
         width: 100%;
         font-size: 1rem;
@@ -154,6 +159,7 @@
       .dashboard-grid .reactstate-wrapper,
       .dashboard-grid .pagination-wrapper,
       .dashboard-grid .infinitescroll-wrapper,
+      .dashboard-grid .sessionlocalstorage-wrapper,
       .dashboard-grid .other-wrapper {
         width: 100%;
         padding: 10px;
@@ -168,6 +174,7 @@
       .dashboard-grid .reactstate-item a,
       .dashboard-grid .pagination-item a,
       .dashboard-grid .infinitescroll-item a,
+      .dashboard-grid .sessionlocalstorage-item a,
       .dashboard-grid .other-item a {
         font-size: 0.9rem;
         font-weight: 400;
@@ -182,6 +189,7 @@
         .dashboard-grid .reactstate-item a:hover,
         .dashboard-grid .pagination-item a:hover,
         .dashboard-grid .infinitescroll-item a:hover,
+        .dashboard-grid .sessionlocalstorage-item a:hover,
         .dashboard-grid .other-item a:hover {
           will-change: all;
           text-decoration: underline;

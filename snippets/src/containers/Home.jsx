@@ -94,6 +94,14 @@ const Home = () => (
                 </div>
             </div>
 
+            {/** Session and Local Storage */}
+            <div className="sessionlocalstorage">
+                <div className="sessionlocalstorage-title">Session and Local Storage</div>
+                <div className="sessionlocalstorage-wrapper">
+                    <div className="sessionlocalstorage-item"><Link to="/session-and-localstorage-in-react">Session and Local Storage in react</Link></div>
+                </div>
+            </div>
+
             {/** Other */}
             <div className="other">
                 <div className="other-title">Other</div>
