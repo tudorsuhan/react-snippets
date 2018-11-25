@@ -15,13 +15,13 @@ import { compose } from 'recompose';
 const API = 'http://android.softwsp.com/wp-json/wp/v2/';
 const DEFAULT_QUERY = 'posts?per_page=100';
 
-const applySetError = () => ({
+const applyError = () => ({
     isError: true,
     isFetching: false,
 });
 
 const withFetching = (url) => (Component) =>
-    class WithFetching extends React.Component {
+    class extends React.Component {
         constructor(props) {
             super(props);
             this.state = {
@@ -32,13 +32,33 @@ const withFetching = (url) => (Component) =>
         }
 
         componentDidMount() {
-            this.setState({ isFetching: true, });
-            axios.get(url)
-                .then(results => this.setState({ data: results.data, isFetching: false, }))
-                .catch(this.onSetError);
+            this.getData();
         }
 
-        onSetError = () => this.setState(applySetError);
+        getData = async () => {
+            this.setState({ isFetching: true, });
+            await axios.get(url)
+                .then(results => this.onFetchResult(results))
+                .catch(this.onFetchError);
+        }
+
+        onFetchError = () => this.setState(applyError);
+
+        onFetchResult = (results, key) => {
+            localStorage.setItem(key, JSON.stringify(results.data));
+            if (results.status === 200) {
+                this.setState({ data: results.data, isFetching: false, });
+                console.log(results);
+            }
+        }
+
+        onLocalStorage = (value, key) => {
+            const cached = localStorage.getItem(key, value);
+            if (cached) {
+                this.setState({ data: JSON.parse(cached), });
+                return;
+            } 
+        }
 
         render() {
             return <Component {...this.props} {...this.state} />
@@ -53,7 +73,7 @@ const withLoading = (conditionFn) => (Component) => (props) =>
 
 const fetchingCondition = props => props.isFetching;
 
-const HOCs = ({ data, isError }) => {
+const Articles = ({ data, isError }) => {
     if (isError) return <div>{isError.message}</div>;
     return (
         <ul>
@@ -69,6 +89,6 @@ const HOCs = ({ data, isError }) => {
 const FetchWithHOCs = compose(
     withFetching(API + DEFAULT_QUERY),
     withLoading(fetchingCondition),
-)(HOCs);
+)(Articles);
 
 export default FetchWithHOCs;
