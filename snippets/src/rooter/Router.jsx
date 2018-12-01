@@ -43,6 +43,7 @@ import Fetch from '../components/FetchData/Fetch';
 import Axios from '../components/FetchData/Axios';
 import AsyncAwait from '../components/FetchData/AsyncAwait';
 import FetchWithHOCs from '../components/FetchData/HOCs';
+import ReduxFetchData from '../components/FetchData/ReduxFetch';
 import RenderPropApproach from '../components/FetchData/RenderProps';
 
 const Routes = () => (
@@ -67,7 +68,8 @@ const Routes = () => (
         <Route path="/react-validation" component={ReactValidation} />
         <Route path="/list" component={List} />
         <Route path="/pass-props-to-other-component" component={Properties} />
-        <Route path="/redux-fetch" component={FetchDataWithRedux} />
+        <Route path="/redux-fetch-1" component={FetchDataWithRedux} />
+        <Route path="/redux-fetch-2" component={ReduxFetchData} />
         <Route path="/pass-data-from-child-to-parent" component={DataChildToParent} />
         <Route path="/pass-data-from-parent-to-child" component={DataParentToChild} />
         <Route path="/pass-event-from-child-to-parent" component={EventChildToParent} />
