@@ -112,7 +112,10 @@ const Home = () => (
                     <div className="other-item"><Link to="/counter">Counter</Link></div>
                     <div className="other-item"><Link to="/curency-converter">Currency Converter</Link></div>
                     <div className="other-item"><Link to="/react-advanced-list-component">React Advanced List Component</Link></div>
+<<<<<<< HEAD
                     <div className="other-item"><Link to="/get-user-location">Get User Location</Link></div>
+=======
+>>>>>>> 8f4b433d0f13e2050ebd945aca00d9816f0c95a9
                 </div>
             </div>
 
