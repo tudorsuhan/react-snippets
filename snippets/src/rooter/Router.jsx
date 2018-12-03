@@ -9,10 +9,7 @@ import TodoApp from '../components/Todo';
 import Counter from '../components/Counter';
 import CurrencyConverter from '../components/CurrencyConverter';
 import AdvancedListComponent from '../components/AdvancedList';
-<<<<<<< HEAD
 import GetUserInformation from '../components/GetUserInformation/GetUserInformation';
-=======
->>>>>>> 8f4b433d0f13e2050ebd945aca00d9816f0c95a9
 
 import SessionLocalStorage from '../components/SessionLocalStorage/SessionLocalStorage';
 
@@ -82,10 +79,7 @@ const Routes = () => (
         <Route path="/infinitescroll-hoc" component={HOCInfiniteScroll} />
         <Route path="/react-advanced-list-component" component={AdvancedListComponent} />
         <Route path="/session-and-localstorage-in-react" component={SessionLocalStorage} />
-<<<<<<< HEAD
         <Route path="/get-user-location" component={GetUserInformation} />
-=======
->>>>>>> 8f4b433d0f13e2050ebd945aca00d9816f0c95a9
     </Switch>
 );
 
