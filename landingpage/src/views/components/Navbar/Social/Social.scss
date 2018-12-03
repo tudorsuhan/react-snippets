@@ -1,0 +1,27 @@
+@import '../../../../assets/sass/modules/_mixins';
+
+.media {
+    position: relative;
+    height: 100%;
+    margin-right: 15px;
+    cursor: pointer;
+    @include flexbox();
+    @include align-items(center);
+
+    .facebook, 
+    .instagram, 
+    .whatsapp {
+        width: 18px;
+        height: 18px;
+        margin: 0 2px;
+        @include transition(all 0.3s cubic-bezier(.17, .67, .83, .67));
+        &:hover {
+            @include transform(scale(1.2));
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

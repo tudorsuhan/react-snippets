@@ -1,0 +1,46 @@
+.vertical-left {
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  z-index: 2222222;
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center; }
+  @media (max-width: 1280px) {
+    .vertical-left {
+      display: none; } }
+  .vertical-left__brand {
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: 'Ubuntu';
+    color: #9fa9b4; }
+    .vertical-left__brand:after {
+      content: '';
+      position: relative;
+      width: 40px;
+      height: 2px;
+      background: #9fa9b4;
+      display: inline-block;
+      top: -5px;
+      margin: 0 10px; }
+  .vertical-left__motto {
+    font-size: 0.8rem;
+    font-weight: 300;
+    font-family: 'Ubuntu';
+    color: #9fa9b4; }

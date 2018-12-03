@@ -1,0 +1,14 @@
+@import '../../../../assets/sass/modules/_mixins';
+@import '../../../../assets/sass/base/_palette';
+@import '../../../../assets/sass/base/_typography';
+
+.sh-promise {
+    @include justify-content(flex-end);
+}
+
+.title-promise, 
+.subtitle-promise {
+    font-family: 'Ubuntu';
+    color: $orangered-d;
+    text-align: right;
+}

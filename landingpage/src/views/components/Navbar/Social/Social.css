@@ -1,0 +1,38 @@
+.media {
+  position: relative;
+  height: 100%;
+  margin-right: 15px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center; }
+  .media .facebook,
+  .media .instagram,
+  .media .whatsapp {
+    width: 18px;
+    height: 18px;
+    margin: 0 2px;
+    -moz-transition: all 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    -o-transition: all 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    -webkit-transition: all 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    -ms-transition: all 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    transition: all 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67); }
+    .media .facebook:hover,
+    .media .instagram:hover,
+    .media .whatsapp:hover {
+      -moz-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2); }
+    .media .facebook svg,
+    .media .instagram svg,
+    .media .whatsapp svg {
+      width: 100%;
+      height: 100%; }

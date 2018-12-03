@@ -1,0 +1,150 @@
+@import '../../../assets/sass/modules/_mixins';
+@import '../../../assets/sass/base/_palette';
+@import '../../../assets/sass/base/_typography';
+
+.brand {
+    position: relative;
+    width: 35%;
+    @include breakpoint(768) {
+        width: 48%;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    @include breakpoint(533) {
+        width: 100%;
+        text-align: center;
+    }
+
+    &__name {
+        position: relative;
+        margin-bottom: 30px;
+
+        h1 {
+            font-size: 4rem;
+            font-family: 'Rubik';
+            font-weight: 600;
+            margin: 0;
+        }
+    }
+
+    &__contact {
+        position: relative;
+
+        .bc-header {
+            font-size: 1.5rem;
+            font-weight: 400;
+            font-family: 'Ubuntu';
+            margin-bottom: 10px;
+            display: table;
+            color: $darkslategray;
+            @include breakpoint(768) {
+                margin: 0px auto 10px;
+            }
+            &:after {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 2px;
+                background: $darkslategray;
+            }
+        }
+
+        .headoffice {
+            display: block;
+            margin-bottom: 10px;
+
+            &__name {
+                font-size: 0.9rem;
+                font-weight: 400;
+                font-family: 'Rubik';
+                margin: 0;
+                color: $darkdimgray;
+            }
+
+            &__phone {
+                font-size: 0.7rem;
+                font-weight: 300;
+                font-family: 'Ubuntu';
+                color: $darkgray;
+            }
+        }
+    }
+}
+
+.company {
+    width: 25%;
+    @include breakpoint(768) {
+        width: 48%;
+        margin-bottom: 50px;
+    }
+    @include breakpoint(533) {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.network, .socialmedia {
+    width: 20%;
+    @include breakpoint(768) {
+        width: 48%;
+        margin-bottom: 50px;
+    }
+    @include breakpoint(533) {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.company, .network, .socialmedia {
+    position: relative;
+    @include breakpoint(768) {
+        text-align: center;
+    }
+
+    &__header {
+        font-size: 1.2rem;
+        color: $charcoaldark;
+        font-weight: 500;
+        margin-bottom: 12px;
+        font-family: 'Lato';
+    }
+
+    .ul {
+        width: 100%;
+        position: relative;
+
+        &__li {
+            padding: 5px 5px 5px 0;
+
+            a {
+                color: $charcoalsoften;
+                font-weight: 400;
+                font-family: 'Rubik';
+                @include transition(all 0.3s cubic-bezier(.17, .67, .83, .67));
+                &:hover {
+                    color: $charcoal;
+                }
+            }
+        }
+    }
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 999;
+    p {
+        font-size: 0.9rem;
+        margin: 3px 20px 50px;
+        font-family: 'Rubik';
+        font-weight: 400;
+        color: $midnight-d;
+        a {
+            color: $indiagreen;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

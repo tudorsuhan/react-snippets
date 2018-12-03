@@ -1,0 +1,40 @@
+@import '../../../../assets/sass/modules/_mixins';
+@import '../../../../assets/sass/base/_palette';
+
+.vertical-left {
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    z-index: 2222222;
+    @include transform(rotate(-90deg));
+    @include flexbox();
+    @include justify-content(center);
+    @include align-items(center);
+    @include breakpoint(1280) {
+        display: none;
+    }
+
+    &__brand {
+        font-size: 1.1rem;
+        font-weight: 600;
+        font-family: 'Ubuntu';
+        color: $lightgray;
+        &:after {
+            content: '';
+            position: relative;
+            width: 40px;
+            height: 2px;
+            background: $lightgray;
+            display: inline-block;
+            top: -5px;
+            margin: 0 10px;
+        }
+    }
+
+    &__motto {
+        font-size: 0.8rem;
+        font-weight: 300;
+        font-family: 'Ubuntu';
+        color: $lightgray;
+    }
+}

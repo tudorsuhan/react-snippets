@@ -1,0 +1,9 @@
+// Padding
+@function padding($padding...) {
+	@return $padding;
+}
+
+// Margin
+@function margin($margin...) {
+	@return $margin;
+}

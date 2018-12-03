@@ -1,0 +1,88 @@
+@import '../../../assets/sass/modules/_mixins';
+@import '../../../assets/sass/base/_palette';
+
+// Request Offer
+.offer-request {
+    width: 1080px;
+    position: relative;
+    padding: 30px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+    @include breakpoint(1080) {
+        width: 100%;
+    }
+    @include breakpoint(533) {
+        flex-flow: column wrap;
+    }
+
+    &__brief {
+        background: $darkdimgray;;
+        border-radius: 50px;
+        padding: 9px 20px;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        position: relative;
+        border: none;
+        margin-right: 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        @include breakpoint(533) {
+            margin-bottom: 15px;
+            margin-right: 0;
+        }
+
+        &:hover {
+            background: transparent;
+            box-shadow: 0 0 0 2px $darkdimgray;;
+        }
+
+        &:hover svg g g path {
+            fill: $darkdimgray;;
+        }
+
+        &:hover span {
+            color: $darkdimgray;;
+        }
+        
+        svg {
+            width: 12px;
+            height: 12px;
+            margin-right: 5px;
+            transition: all 0.2s ease-in-out;
+        }
+        
+        span {
+            color: $white;
+            font-size: 0.8rem;
+            line-height: 11px;
+            transition: all 0.2s ease-in-out;
+        }        
+    }
+
+    &__phone {
+        padding-left: 20px;
+        cursor: pointer;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        @include breakpoint(533) {
+            padding-left: 0;
+        }
+
+        svg {
+            height: 25px;
+            width: 25px;
+            margin-right: 5px;
+            transition: all 0.2s ease-in-out;
+        }
+
+        span {
+            font-size: 0.9rem;
+            font-weight: 900;
+        }
+    }
+}

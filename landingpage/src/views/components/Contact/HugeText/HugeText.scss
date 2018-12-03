@@ -1,0 +1,18 @@
+@import '../../../../assets/sass/modules/_mixins';
+@import '../../../../assets/sass/base/_palette';
+@import '../../../../assets/sass/base/_typography';
+
+.contact-text {
+    font-size: 12vw;
+    font-weight: 600;
+    font-family: 'Ubuntu';
+    color: $limegreen-t;
+    left: 0;
+    top: 25%;
+    @include breakpoint(992) {
+        left: 2rem;
+    }
+    @include breakpoint(768) {
+        display: none;
+    }
+}

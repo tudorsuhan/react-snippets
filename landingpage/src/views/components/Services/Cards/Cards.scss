@@ -1,0 +1,123 @@
+@import '../../../../assets/sass/modules/_mixins';
+@import '../../../../assets/sass/base/_palette';
+@import '../../../../assets/sass/base/_typography';
+
+.services-content {
+    width: 100%;
+    position: relative;
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(flex-start);
+    @include flex-flow(row wrap);
+}
+
+.card-service {
+    width: calc(100% / 4);
+    height: 300px;
+    position: relative;
+    border-radius: 5px;
+    padding-bottom: 30px;
+    overflow: hidden;
+    margin: 0;
+    cursor: pointer;
+    @include transition(all 0.3s cubic-bezier(.17, .67, .83, .67));
+    @include flexbox();
+    @include justify-content(flex-end);
+    @include flex-flow(column nowrap);
+    @include breakpoint(992) {
+        width: calc(100% / 3);
+    }
+    @include breakpoint(768) {
+        width: calc(100% / 2);
+    }
+    @include breakpoint(533) {
+        width: 100%;
+    }
+    &:hover {
+        background: $white;
+        @include box-shadow(0px 0px 30px 10px rgba(109, 109, 109, 0.1));
+    }
+    &:hover &__logo .fancy-lines {
+        display: block;
+    }
+
+    &__title {
+        height: 40px;
+        text-align: center;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-family: 'Ubuntu';
+        @include flexbox();
+        @include justify-content(center);
+        @include align-items(flex-end);
+    }
+
+    .title-webdevelopment {
+        color: $tomato-d;
+    }
+
+    .title-appdevelopment {
+        color: $orange-d;
+    }
+
+    .title-administration {
+        color: $orchid-d;
+    }
+
+    .title-solutions {
+        color: $midnight-d;
+    }
+
+    .title-support {
+        color: $palegreen-d;
+    }
+
+    .title-performance {
+        color: $gold-d;
+    }
+
+    .title-interfacedesign {
+        color: $turquoise-d;
+    }
+
+    .title-appdesign {
+        color: $forest-d;
+    }
+
+    &__logo {
+        height: 140px;
+        @include flexbox();
+        @include justify-content(center);
+        @include align-items(center);
+
+        .fancy-lines {
+            width: 60%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+
+        .baloon {
+            width: 120px;
+            height: 120px;
+            transform: rotate(20deg);
+            @include transform(rotate(20deg));
+            -webkit-filter: drop-shadow( 0px 5px 5px rgb(253, 238, 240) ); 
+            filter: drop-shadow( 0px 5px 5px rgb(253, 238, 240) );
+        }
+
+        .icon {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+
+            img {
+                width: 50px;
+                height: 50px;
+                @include transform(rotate(-5deg));
+            }
+        }
+    }
+}

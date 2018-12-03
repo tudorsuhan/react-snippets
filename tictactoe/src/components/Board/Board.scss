@@ -1,0 +1,17 @@
+@import '../../assets/sass/core/_palette';
+
+.status {
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+    font-family: 'Rubik';
+    font-weight: 300;
+    color: $darkdimgray;
+}
+
+.board-row {
+    &:after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+}

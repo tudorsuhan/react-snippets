@@ -1,0 +1,9 @@
+@import '../../../../../assets/sass/base/_palette';
+
+.facebook {
+    &:hover {
+        svg g g path {
+            fill: $facebook;
+        }
+    }
+}

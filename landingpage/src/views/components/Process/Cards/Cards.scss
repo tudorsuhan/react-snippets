@@ -1,0 +1,96 @@
+@import '../../../../assets/sass/modules/_mixins';
+@import '../../../../assets/sass/base/_palette';
+@import '../../../../assets/sass/base/_typography';
+
+.op-card {
+    width: 100%;
+    height: 230px;
+    position: relative;
+    margin: 25px auto;
+    background: $white;
+    cursor: crosshair;
+    top: 0;
+    border-bottom: 4px solid $white;
+    @include transition(all 0.3s cubic-bezier(.17, .67, .83, .67));
+    @include breakpoint(992) {
+        height: 220px;
+    }
+    @include breakpoint(533) {
+        height: 200px;
+    }
+    @include breakpoint(414) {
+        height: 180px;
+    }
+
+    &--listen {
+        &:hover {
+            border-bottom: 4px solid $purple-d;
+        }
+    }
+
+    &--planning {
+        &:hover {
+            border-bottom: 4px solid $deepskyblue-d;
+        }
+    }
+
+    &--design {
+        &:hover {
+            border-bottom: 4px solid $tomato-d;
+        }
+    }
+
+    &--development {
+        &:hover {
+            border-bottom: 4px solid $forest-d;
+        }
+    }
+
+    &--delivery {
+        &:hover {
+            border-bottom: 4px solid $orangered-d;
+        }
+    }
+
+    &--maintenance {
+        &:hover {
+            border-bottom: 4px solid $gold-d;
+        }
+    }
+
+    &__icon {
+        position: relative;
+        width: 70px;
+        height: 70px;
+        margin: 40px auto;
+        @include breakpoint(533) {
+            width: 40px;
+            height: 40px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__name {
+        position: absolute;
+        bottom: 20px;
+        left: 10px;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        font-weight: 200;
+        font-family: 'Ubuntu';
+        color: $dimgray;
+    }
+
+    &__number {
+        position: absolute;
+        top: -30px;
+        left: 10px;
+        font-size: 3rem;
+        font-weight: 600;
+        font-family: 'Muli';
+    }
+}

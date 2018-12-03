@@ -1,0 +1,129 @@
+.button-new-bill,
+.button-new-tov,
+.button-tov, 
+.button-settings,
+.button-associations, 
+.button-screwing, 
+.button-deliver, 
+.button-register-box, 
+.button-boxes-fh, 
+.button__vieworder, 
+.button__print, 
+.button__location, 
+.button__colors, 
+.button__edit, 
+.button__delete, 
+.button__update, 
+.button__activate, 
+.button-add-verification, 
+.button-delete, 
+.button-billing, 
+.button-proforma {
+    position: relative;
+    display: inline-block;
+}
+
+.button-new-bill .tooltiptext,
+.button-new-tov .tooltiptext,
+.button-tov .tooltiptext, 
+.button-settings .tooltiptext,
+.button-associations .tooltiptext, 
+.button-screwing .tooltiptext, 
+.button-deliver .tooltiptext, 
+.button-register-box .tooltiptext, 
+.button-boxes-fh .tooltiptext, 
+.button-add-verification .tooltiptext, 
+.button-delete .tooltiptext, 
+.button-billing .tooltiptext, 
+.button-proforma .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: $darkdimgray;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.button__vieworder .tooltiptext, 
+.button__print .tooltiptext, 
+.button__location .tooltiptext, 
+.button__colors .tooltiptext, 
+.button__edit .tooltiptext, 
+.button__delete .tooltiptext, 
+.button__update .tooltiptext, 
+.button__activate .tooltiptext {
+    visibility: hidden;
+    width: 90px;
+    background-color: $darkdimgray;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -47px;
+    font-size: 0.7rem;
+}
+
+.button-new-bill .tooltiptext::after,
+.button-new-tov .tooltiptext::after,
+.button-tov .tooltiptext::after, 
+.button-settings .tooltiptext::after,
+.button-associations .tooltiptext::after, 
+.button-screwing .tooltiptext::after, 
+.button-deliver .tooltiptext::after, 
+.button-register-box .tooltiptext::after, 
+.button-boxes-fh .tooltiptext::after, 
+.button__vieworder .tooltiptext::after, 
+.button__print .tooltiptext::after, 
+.button__location .tooltiptext::after, 
+.button__colors .tooltiptext::after, 
+.button__edit .tooltiptext::after, 
+.button__delete .tooltiptext::after, 
+.button__update .tooltiptext::after, 
+.button__activate .tooltiptext::after, 
+.button-add-verification .tooltiptext::after, 
+.button-delete .tooltiptext::after, 
+.button-billing .tooltiptext::after, 
+.button-proforma .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: $darkdimgray transparent transparent transparent;
+}
+
+.button-new-bill:hover .tooltiptext,
+.button-new-tov:hover .tooltiptext,
+.button-tov:hover .tooltiptext, 
+.button-settings:hover .tooltiptext,
+.button-associations:hover .tooltiptext, 
+.button-screwing:hover .tooltiptext, 
+.button-deliver:hover .tooltiptext, 
+.button-register-box:hover .tooltiptext, 
+.button-boxes-fh:hover .tooltiptext, 
+.button__vieworder:hover .tooltiptext, 
+.button__print:hover .tooltiptext, 
+.button__location:hover .tooltiptext, 
+.button__colors:hover .tooltiptext, 
+.button__edit:hover .tooltiptext, 
+.button__delete:hover .tooltiptext, 
+.button__update:hover .tooltiptext, 
+.button__activate:hover .tooltiptext, 
+.button-add-verification:hover .tooltiptext, 
+.button-delete:hover .tooltiptext, 
+.button-billing:hover .tooltiptext, 
+.button-proforma:hover .tooltiptext {
+    visibility: visible;
+}

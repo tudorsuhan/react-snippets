@@ -1,0 +1,43 @@
+.Group {
+  width: 200px;
+  padding: 10px;
+  margin: 50px auto 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.Button {
+  width: 70px;
+  padding: 10px;
+  border: none;
+  border: 1px solid #ddd;
+  background: transparent;
+}
+
+.Button--Increment {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: green;
+}
+
+.Button--Decrement {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: red;
+}
+
+.Button--Toggle {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+}
+
+.Value {
+  font-size: 3rem;
+  color: purple;
+  font-weight: 800;
+  text-align: center;
+  margin: 0;
+}
