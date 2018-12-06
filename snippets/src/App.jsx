@@ -9,7 +9,11 @@ import Routes from './rooter/Router'
 
 const store = configureStore()
 
+<<<<<<< HEAD
 console.log('Redux store state', store.getState()) // GET default state
+=======
+console.log(store.getState()) // GET default state
+>>>>>>> a49ebf4fca167770181ea2f80b27ae3780e4b1a9
 
 export default class App extends Component {
 
