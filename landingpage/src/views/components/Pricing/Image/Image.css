@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:500");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:700");
+@import url("https://fonts.googleapis.com/css?family=Rubik");
+@import url("https://fonts.googleapis.com/css?family=Rubik:300");
+@import url("https://fonts.googleapis.com/css?family=Rubik:500");
+@import url("https://fonts.googleapis.com/css?family=Rubik:700");
+@import url("https://fonts.googleapis.com/css?family=Rubik:900");
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:500");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:700");
+@import url("https://fonts.googleapis.com/css?family=Cabin");
+@import url("https://fonts.googleapis.com/css?family=Cabin:500");
+@import url("https://fonts.googleapis.com/css?family=Cabin:600");
+@import url("https://fonts.googleapis.com/css?family=Cabin:700");
+@import url("https://fonts.googleapis.com/css?family=Muli");
+@import url("https://fonts.googleapis.com/css?family=Muli:200");
+@import url("https://fonts.googleapis.com/css?family=Muli:300");
+@import url("https://fonts.googleapis.com/css?family=Muli:600");
+@import url("https://fonts.googleapis.com/css?family=Muli:700");
+@import url("https://fonts.googleapis.com/css?family=Muli:800");
+@import url("https://fonts.googleapis.com/css?family=Muli:900");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Comfortaa");
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+@import url("https://fonts.googleapis.com/css?family=Cookie");
+@import url("https://fonts.googleapis.com/css?family=Satisfy");
+@import url("https://fonts.googleapis.com/css?family=Caveat");
+@import url("https://fonts.googleapis.com/css?family=Kalam");
+.pricing-image {
+  position: relative;
+  width: 50%;
+  height: 250px; }
+  .pricing-image img {
+    width: 250px;
+    height: auto; }

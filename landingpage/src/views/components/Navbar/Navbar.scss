@@ -1,0 +1,48 @@
+@import '../../../assets/sass/modules/_mixins';
+@import '../../../assets/sass/base/_palette';
+
+// Navbar
+.navbar {
+    width: 100%;
+    height: 70px;
+    position: relative;
+    @include flexbox();
+    @include justify-content(center);
+    @include align-items(center);
+    @include box-shadow(0px 5px 10px 5px rgba(119, 119, 119, 0.1));
+    @include transition(all 0.3s cubic-bezier(.17, .67, .83, .67));
+
+    .wrapper {
+        width: 1080px;
+        height: 100%;
+        position: relative;
+        padding: 0 20px;
+        @include flexbox();
+        @include justify-content(space-between);
+        @include align-items(center);
+        @include breakpoint(1080) {
+            width: 100%;
+        }
+
+        .utilities {
+            position: relative;
+            height: 70px;
+            @include flexbox();
+            @include justify-content(center);
+            @include align-items(center);
+    
+            .separator {
+                margin: 0 10px;
+                color: $lightgray;
+                @include breakpoint(414) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+// Navbar Noshadow
+.noshadow {
+    @include box-shadow(0px 5px 10px 5px rgba(119, 119, 119, 0) !important);
+}

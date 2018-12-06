@@ -1,0 +1,44 @@
+@import '../../../../assets/sass/modules/_mixins';
+@import '../../../../assets/sass/base/_palette';
+
+.collaborate {
+    position: relative;
+
+    a {
+        font-size: 0.9rem;
+        font-weight: 300;
+        font-family: 'Lato';
+        color: $darkdimgray;
+
+        &:after {
+            content: '';
+            display: table;
+            width: 0%;
+            height: 2px;
+            opacity: 0;
+            background: $mediumseagreen;
+        }
+
+        &:hover {
+            color: $mediumseagreen;
+
+            span {
+                color: $mediumseagreen;
+                @include transition(color 0.3s cubic-bezier(.17, .67, .83, .67));
+                will-change: color;
+            }
+
+            &:after {
+                width: 100%;
+                @include transition(width 0.3s cubic-bezier(.17, .67, .83, .67), opacity 0.3s cubic-bezier(.17, .67, .83, .67));
+                will-change: width, opacity;
+                opacity: 1;
+            }
+        }
+
+        span {
+            font-weight: 500;
+            color: $darkslategray;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+@import '../../../../../assets/sass/base/_palette';
+
+.instagram {
+    &:hover {
+        svg g path {
+            fill: $instagram;
+        }
+    }
+}

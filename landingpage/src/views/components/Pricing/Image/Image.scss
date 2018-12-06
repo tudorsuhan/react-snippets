@@ -1,0 +1,14 @@
+@import '../../../../assets/sass/modules/_mixins';
+@import '../../../../assets/sass/base/_palette';
+@import '../../../../assets/sass/base/_typography';
+
+.pricing-image {
+    position: relative;
+    width: 50%;
+    height: 250px;
+
+    img {
+        width: 250px;
+        height: auto;
+    }
+}

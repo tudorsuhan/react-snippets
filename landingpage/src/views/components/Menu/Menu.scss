@@ -1,0 +1,250 @@
+@import '../../../assets/sass/modules/_mixins';
+@import '../../../assets/sass/base/_palette';
+// @import '../../../assets/sass/base/_typography';
+
+// Menu
+.sidenav {
+    width: 600px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -600px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 333333;
+    background: $white;
+    padding: 70px 50px;
+    @include flexbox();
+    @include justify-content(space-between);
+    @include align-items(space-between);
+    @include flex-flow(column wrap);
+    @include transition(all 0.3s cubic-bezier(.17, .67, .83, .67));
+    @include box-shadow(0px 5px 10px 5px rgba(119, 119, 119, 0.1));
+    @include breakpoint(667) {
+        width: 100%;
+        right: -100%;
+    }
+
+    .menu-ul {
+        padding: 0;
+        position: relative;
+        width: 100%;
+
+        &__li {
+            margin: 5px 0;
+
+            a {
+                font-size: 1.4rem;
+                font-weight: 300;
+                font-family: 'Quicksand';
+                color: $lightgray;
+                cursor: crosshair;
+                position: relative;
+                display: inline-block;
+                @include transition(all 0.7s cubic-bezier(.17, .67, .83, .67));
+                @include breakpoint(992) {
+                    font-size: 1.6rem;
+                }
+                @include breakpoint(533) {
+                    font-size: 1.4rem;
+                }
+
+                &:before {
+                    content: '';
+                    width: 0;
+                    left: 0;
+                    top: 50%;
+                    height: 3px;
+                    position: absolute;
+                    @include transition(width 0.3s cubic-bezier(.17, .67, .83, .67));
+                    will-change: width;
+                }
+
+                &:hover:before {
+                    width: 100%;
+                }
+            }
+
+            // What we do
+            &:nth-child(1) a:before {
+                background: $deepskyblue-d;
+            }
+            &:nth-child(1) a:hover {
+                color: $deepskyblue-d;
+            }
+
+            // Story
+            &:nth-child(2) a:before {
+                background: $red-d;
+            }
+
+            &:nth-child(2) a:hover {
+                color: $red-d;
+            }
+
+            // Services
+            &:nth-child(3) a:before {
+                background: $turquoise-d;
+            }
+
+            &:nth-child(3) a:hover {
+                color: $turquoise-d;
+            }
+
+            // Our process
+            &:nth-child(4) a:before {
+                background: $mediumseagreen;
+            }
+
+            &:nth-child(4) a:hover {
+                color: $mediumseagreen;
+            }
+
+            // Technologies
+            &:nth-child(5) a:before {
+                background: $sandybrown-d;
+            }
+
+            &:nth-child(5) a:hover {
+                color: $sandybrown-d;
+            }
+
+            // Projects
+            &:nth-child(6) a:before {
+                background: $purple-d;
+            }
+
+            &:nth-child(6) a:hover {
+                color: $purple-d;
+            }
+
+            // Our promise
+            &:nth-child(7) a:before {
+                background: $orangered-d;
+            }
+
+            &:nth-child(7) a:hover {
+                color: $orangered-d;
+            }
+
+            // Values
+            &:nth-child(8) a:before {
+                background: $gold-d;
+            }
+
+            &:nth-child(8) a:hover {
+                color: $gold-d;
+            }
+
+            // Industries
+            &:nth-child(9) a:before {
+                background: $forest-d;
+            }
+
+            &:nth-child(9) a:hover {
+                color: $forest-d;
+            }
+
+            // Clients
+            &:nth-child(10) a:before {
+                background: $salmon-d;
+            }
+
+            &:nth-child(10) a:hover {
+                color: $salmon-d;
+            }
+
+            // Pricing
+            &:nth-child(11) a:before {
+                background: $darkdimgray;
+            }
+
+            &:nth-child(11) a:hover {
+                color: $darkdimgray;
+            }
+
+            // Contact
+            &:nth-child(12) a:before {
+                background: $limegreen-d;
+            }
+
+            &:nth-child(12) a:hover {
+                color: $limegreen-d;
+            }
+        }
+    }
+
+    .info {
+        position: relative;
+        @include flexbox();
+        @include justify-content(space-between);
+        @include align-items(center);
+
+        .phone-no {
+            font-size: 0.9rem;
+            font-weight: 400;
+            font-family: 'Quicksand';
+            color: $primary-f;
+            cursor: pointer;
+            @include transition(all 0.3s cubic-bezier(.17, .67, .83, .67));
+            &:hover {
+                color: $darkdimgray;
+            }
+        }
+        
+        .social-media {
+            @include flexbox();
+            @include align-items(center);
+
+            .fb, 
+            .ig, 
+            .wa {
+                width: 25px;
+                height: 25px;
+                margin: 0 5px;
+                cursor: pointer;
+                @include transition(all 0.3s cubic-bezier(.17, .67, .83, .67));
+                &:hover {
+                    @include transform(scale(1.2));
+                }
+
+                svg {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .fb {
+                &:hover {
+                    svg g g path {
+                        fill: $facebook;
+                    }
+                }
+            }
+
+            .ig {
+                &:hover {
+                    svg g path {
+                        fill: $instagram;
+                    }
+                }
+            }
+
+            .wa {
+                &:hover {
+                    svg g path {
+                        fill: $whatsapp;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Menu is Open
+.is-open {
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+}

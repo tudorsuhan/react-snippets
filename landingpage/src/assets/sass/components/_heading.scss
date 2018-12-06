@@ -1,0 +1,331 @@
+// Section head
+.section-head {
+    position: relative;
+    @include flexbox();
+    @include align-items(center);
+}
+
+// Section head - What we do?
+
+
+// Section head - Story
+
+
+// Section head - Services
+
+
+// Section head - Our process
+
+
+// Section head - Technologies
+
+
+// Section head - Projects
+
+
+// Section head - Technologies
+.sh-technologies {
+    @include justify-content(flex-start);
+}
+
+// Section head - Industries
+.sh-industries {
+    @include justify-content(flex-start);
+}
+
+// Section head - Values
+.sh-values {
+    @include justify-content(flex-end);
+}
+
+// Section head - Clients
+
+
+// Section head - Pricing
+
+
+// Section head - Our Promise
+.sh-promise {
+    @include justify-content(flex-start);
+}
+
+// Section heading: title & subtitle
+.heading {
+    position: relative;
+
+    &--title {
+        font-size: 3.5rem;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    &--subtitle {
+        font-size: 0.9rem;
+        font-weight: 300;
+        margin: 0;
+    }
+
+    // What we do?
+    
+
+    // Story
+    
+
+    // Services
+    
+
+    // Our process
+    
+
+    // Technologies
+    
+
+    // Projects
+    
+
+    // Our promise
+    .title-promise, 
+    .subtitle-promise {
+        font-family: 'Ubuntu';
+        color: $orangered-d;
+    }
+
+    // Values
+    .title-values, 
+    .subtitle-values {
+        font-family: 'Ubuntu';
+        color: $gold-d;
+        text-align: right;
+    }
+
+    // Industries
+    .title-industries, 
+    .subtitle-industries {
+        font-family: 'Ubuntu';
+        color: $forest-d;
+    }
+
+    // Clients
+    
+
+    // Pricing
+    
+}
+
+
+
+// Section content
+.section-content {
+    position: relative;
+
+    .paragraph {
+        line-height: 27px;
+        font-size: 1rem;
+    }
+
+    // What we do?
+    
+
+    // Story
+    
+
+    // Our process
+    
+
+    // Technologies
+    .p-technologies {
+        font-weight: 100;
+        font-family: 'Ubuntu';
+        color: $silverdark;
+        font-size: 0.9rem;
+
+        span {
+            font-weight: 600;
+            font-size: 1rem;
+            color: $sandybrown-d;
+        }
+    }
+
+    // Projects
+    .p-projects {
+        font-weight: 400;
+        font-family: 'Ubuntu';
+        color: $silverdark;
+        text-align: right;
+        font-size: 1rem;
+
+        span {
+            font-weight: 600;
+            font-size: 1rem;
+            color: $purple-d;
+        }
+    }
+
+    // Our promise
+    .p-promise {
+        font-weight: 100;
+        font-family: 'Ubuntu';
+        color: $silverdark;
+        font-size: 0.9rem;
+
+        span {
+            font-weight: 600;
+            font-size: 1rem;
+            color: $orangered-d;
+        }
+    }
+
+    // Industries
+    .p-industries {
+        font-weight: 100;
+        font-family: 'Ubuntu';
+        color: $silverdark;
+        font-size: 0.9rem;
+
+        span {
+            font-weight: 600;
+            font-size: 1rem;
+            color: $forest-d;
+        }
+    }
+
+    // Values
+    .p-values {
+        font-weight: 400;
+        font-family: 'Ubuntu';
+        color: $silverdark;
+        text-align: right;
+        font-size: 1rem;
+
+        span {
+            font-weight: 600;
+            font-size: 1rem;
+            color: $gold-d;
+        }
+    }
+
+    // Clients
+    .p-clients {
+        font-weight: 400;
+        font-family: 'Ubuntu';
+        color: $silverdark;
+        text-align: right;
+        font-size: 1rem;
+
+        span {
+            font-weight: 600;
+            font-size: 1rem;
+            color: $salmon-d;
+        }
+    }
+
+    // Pricing
+    
+}
+
+// Section content - What we do?
+
+
+// Section content - Story
+
+
+// Section content - Our promise
+
+
+// Section content - Technologies
+.sc-technologies {
+    padding: 0 135px 0 300px;
+    @include breakpoint(992) {
+        padding: 0 135px 0 150px;
+    }
+    @include breakpoint(768) {
+        padding: 0 0 0 20px;
+    }
+}
+
+// Section content - Our promise
+.sc-promise {
+    padding: 0 135px 0 300px;
+    @include breakpoint(992) {
+        padding: 0 135px 0 150px;
+    }
+    @include breakpoint(768) {
+        padding: 0 0 0 20px;
+    }
+}
+
+// Section content - Industries
+.sc-industries {
+    padding: 0 135px 0 300px;
+    @include breakpoint(992) {
+        padding: 0 135px 0 150px;
+    }
+    @include breakpoint(768) {
+        padding: 0 0 0 20px;
+    }
+}
+
+// Section content - Values
+.sc-values {
+    padding: 0 135px 0 300px;
+    @include breakpoint(992) {
+        padding: 0 135px 0 150px;
+    }
+    @include breakpoint(768) {
+        padding: 0 0 0 20px;
+    }
+}
+
+// Section content - Clients
+.sc-clients {
+    padding: 0 0 0 300px;
+    @include breakpoint(992) {
+        padding: 0 0 0 150px;
+    }
+    @include breakpoint(768) {
+        padding: 0 0 0 20px;
+    }
+}
+
+// Section content - Pricing
+
+
+.huge-text {
+    position: absolute;
+    text-transform: uppercase;
+}
+
+
+
+.services-text {
+    font-size: 10vw;
+    font-weight: 600;
+    font-family: 'Ubuntu';
+    color: $white-d;
+    right: 0;
+    top: 0;
+    @include breakpoint(1080) {
+        left: 2rem;
+        top: 4rem;
+    }
+    @include breakpoint(768) {
+        display: none;
+    }
+}
+
+
+
+.contact-text {
+    font-size: 12vw;
+    font-weight: 600;
+    font-family: 'Ubuntu';
+    color: $limegreen-t;
+    left: 0;
+    top: 25%;
+    @include breakpoint(992) {
+        left: 2rem;
+    }
+    @include breakpoint(768) {
+        display: none;
+    }
+}

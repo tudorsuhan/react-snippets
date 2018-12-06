@@ -1,0 +1,296 @@
+.customer-info, 
+.customer-company, 
+.customer-service, 
+.customer-budget, 
+.customer-deadline, 
+.customer-other {
+    position: relative;
+    width: 1080px;
+    margin: 0 auto;
+    padding: 100px 30px;
+    @include breakpoint(1080) {
+        width: 100%;
+    }
+
+    .order-number {
+        font-size: 3.5rem;
+        font-weight: 600;
+        color: $gold-d;
+        margin-bottom: 40px;
+        font-family: 'Ubuntu';
+    }
+
+    .section-header {
+        text-align: left;
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 400;
+            color: $plummett;
+            margin: 0;
+            font-family: 'Ubuntu';
+        }
+
+        p {
+            font-size: 0.9rem;
+            color: $dimgray;
+            margin: 0 0 40px 0;
+            font-family: 'Ubuntu';
+        }
+
+        h3 {
+            font-size: 0.9rem;
+            color: $dimgray;
+            font-weight: 600;
+            font-family: 'Ubuntu';
+            margin: 5px 0 15px;
+        }
+    }
+
+    .obs {
+        margin-top: 50px;
+        color: $dimgray;
+        font-size: 0.9rem;
+        font-family: 'Ubuntu';
+
+        a {
+            color: $gold-d;
+            font-weight: 600;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.customer-info {
+
+    .personal-information {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+
+        input[type=text], 
+        input[type=email],
+        input[type=tel] {
+            width: 32%;
+            font-size: 0.9rem;
+            font-family: 'Ubuntu';
+            border: none;
+            color: $gold-t;
+            padding: 15px;
+            border: 1px solid $gold-t;
+            border-radius: 30px;
+            @include transition(all 0.3s cubic-bezier(.17, .67, .83, .67));
+            @include breakpoint(768) {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            &:focus {
+                color: $gold-d;
+                border: 1px solid $gold-d;
+            }
+        }
+    }
+}
+
+.customer-company {
+
+    .company {
+        width: 100%;
+
+        input[type=text] {
+            width: 100%;
+            padding: 15px;
+            font-family: 'Ubuntu';
+            border: none;
+            color: $gold-t;
+            font-size: 0.9rem;
+            padding: 15px;
+            border: 1px solid $gold-t;
+            border-radius: 30px;
+            @include transition(all 0.3s cubic-bezier(.17, .67, .83, .67));
+            &:focus {
+                color: $gold-d;
+                border: 1px solid $gold-d;
+            }
+        }
+    }
+}
+
+.customer-service {
+
+    .type-of-project {
+        display: flex;
+        justify-content: flex-start;
+        flex-flow: row wrap;
+        align-items: center;
+        @include breakpoint(414) {
+            justify-content: center;
+        }
+    }
+}
+
+.customer-budget {
+
+    .budget-option {
+        display: flex;
+        justify-content: flex-start;
+        flex-flow: row wrap;
+        align-items: center;
+        margin-bottom: 50px;
+        @include breakpoint(414) {
+            justify-content: center;
+        }
+    }
+
+    .delimiter {
+        margin: 0 0 50px;
+        font-weight: 400;
+        color: $black;
+    }
+
+    .custom-budget {
+
+        &__header {
+
+            .budget-title {
+                margin-bottom: 20px;
+                @include flexbox();
+                @include justify-content(space-between);
+
+                p {
+                    color:$plummett;
+                    font-weight: 400;
+                    font-size: 0.9rem;
+                }
+            }
+
+            .pull-right {
+                color:$gold-d;
+                font-size: 1.4rem;
+                font-weight: 400;
+            }
+        }
+
+        input[type=text] {
+            width: 100%;
+            padding: 15px;
+            font-family: 'Ubuntu';
+            border: none;
+            color: $gold-t;
+            font-size: 0.9rem;
+            padding: 15px;
+            border: 1px solid $gold-t;
+            border-radius: 30px;
+            @include transition(all 0.3s cubic-bezier(.17, .67, .83, .67));
+            &:focus {
+                color: $gold-d;
+                border: 1px solid $gold-d;
+            }
+        }
+    }
+
+    .obs {
+        margin-top: 50px;
+        color: $dimgray;
+        font-size: 0.9rem;
+        font-family: 'Ubuntu';
+
+        a {
+            color: $gold-d;
+            font-weight: 600;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.customer-deadline {
+
+    .deadline-option {
+        display: flex;
+        justify-content: flex-start;
+        flex-flow: row wrap;
+        align-items: center;
+        margin-bottom: 50px;
+        @include breakpoint(414) {
+            justify-content: center;
+        }
+    }
+
+    .obs {
+        margin-top: 50px;
+        color: $dimgray;
+        font-size: 0.9rem;
+        font-family: 'Ubuntu';
+    }
+}
+
+.customer-other {
+
+    textarea {
+        width: 100%;
+        padding: 15px;
+        font-family: 'Ubuntu';
+        border: none;
+        color: $graysoft;
+        resize: none;
+        font-size: 0.9rem;
+        padding: 15px;
+        border: 1px solid $gold-t;
+        border-radius: 5px;
+        @include transition(all 0.3s cubic-bezier(.17, .67, .83, .67));
+        &:focus {
+            border: 1px solid $gold-d;
+            color: $gold-d;
+        }
+    }
+}
+
+.brief {
+
+    .send {
+        padding: 10px 20px;
+        background: $gold-d;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        font-weight: 600;
+        cursor: pointer;
+        color: $white;
+        height: 45px;
+        width: 150px;
+        border: none;
+        display: block;
+        position: relative;
+        margin: 0 auto 50px;
+        border-radius: 30px;
+        @include transition(all 0.3s cubic-bezier(.17, .67, .83, .67));
+        &:hover {
+            background: $black;
+        }
+    }
+
+    .thanks {
+        text-align: center;
+        padding-bottom: 100px;
+
+        h2 {
+            font-size: 2.2rem;
+            color: $darkslategray;
+            font-weight: 600;
+            margin: 0;
+            letter-spacing: -1px;
+            font-family: 'Ubuntu';
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            color: $gold-d;
+            letter-spacing: -1px;
+            margin: 0;
+            font-family: 'Ubuntu';
+        }
+    }
+}

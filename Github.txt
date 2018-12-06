@@ -1,0 +1,35 @@
+# Add a project to github 
+! Without to initialize a readme. Otherwise will get some error when you make a push
+- git init
+- git add .
+- git commit -m "First commit"
+- git remote add origin "remote repository URL"
+- git push -u origin master
+
+# Moving changes from one branch to another
+git stash
+git checkout branch-name
+git stash pop
+
+# Pushing to a different branch
+git push <branch with new changes>:<branch you are pushing to>
+EX: git push origin dev:master
+# This pushses local dev branch to origin master branch
+
+# Pulling from a different branch
+EX: git pull origin master:dev
+# This updates your local dev branch using the remote origin master branch
+
+# Create a branch
+git checkout -b branch-name
+
+# Switch between branches
+git checkout branch-name
+
+# Remove initialization git init
+rm -rf .git
+
+# Update a branch and make it available (visible) in branches on github
+git add .
+git commit -m "initial message"
+git push origin branch-name

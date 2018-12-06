@@ -1,0 +1,14 @@
+@import '../../../../assets/sass/modules/_mixins';
+@import '../../../../assets/sass/base/_palette';
+@import '../../../../assets/sass/base/_typography';
+
+.sh-clients {
+    @include justify-content(flex-start);
+}
+
+.title-clients, 
+.subtitle-clients {
+    font-family: 'Ubuntu';
+    color: $salmon-d;
+    text-align: left;
+}

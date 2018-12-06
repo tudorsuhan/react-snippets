@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:500");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:700");
+@import url("https://fonts.googleapis.com/css?family=Rubik");
+@import url("https://fonts.googleapis.com/css?family=Rubik:300");
+@import url("https://fonts.googleapis.com/css?family=Rubik:500");
+@import url("https://fonts.googleapis.com/css?family=Rubik:700");
+@import url("https://fonts.googleapis.com/css?family=Rubik:900");
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:500");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:700");
+@import url("https://fonts.googleapis.com/css?family=Cabin");
+@import url("https://fonts.googleapis.com/css?family=Cabin:500");
+@import url("https://fonts.googleapis.com/css?family=Cabin:600");
+@import url("https://fonts.googleapis.com/css?family=Cabin:700");
+@import url("https://fonts.googleapis.com/css?family=Muli");
+@import url("https://fonts.googleapis.com/css?family=Muli:200");
+@import url("https://fonts.googleapis.com/css?family=Muli:300");
+@import url("https://fonts.googleapis.com/css?family=Muli:600");
+@import url("https://fonts.googleapis.com/css?family=Muli:700");
+@import url("https://fonts.googleapis.com/css?family=Muli:800");
+@import url("https://fonts.googleapis.com/css?family=Muli:900");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Comfortaa");
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+@import url("https://fonts.googleapis.com/css?family=Cookie");
+@import url("https://fonts.googleapis.com/css?family=Satisfy");
+@import url("https://fonts.googleapis.com/css?family=Caveat");
+@import url("https://fonts.googleapis.com/css?family=Kalam");
+.op-card {
+  width: 100%;
+  height: 230px;
+  position: relative;
+  margin: 25px auto;
+  background: #fff;
+  cursor: crosshair;
+  top: 0;
+  border-bottom: 4px solid #fff;
+  -moz-transition: all 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  -o-transition: all 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  -webkit-transition: all 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  -ms-transition: all 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  transition: all 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67); }
+  @media (max-width: 992px) {
+    .op-card {
+      height: 220px; } }
+  @media (max-width: 533px) {
+    .op-card {
+      height: 200px; } }
+  @media (max-width: 414px) {
+    .op-card {
+      height: 180px; } }
+  .op-card--listen:hover {
+    border-bottom: 4px solid #a680fb; }
+  .op-card--planning:hover {
+    border-bottom: 4px solid #02b1c6; }
+  .op-card--design:hover {
+    border-bottom: 4px solid #f24c55; }
+  .op-card--development:hover {
+    border-bottom: 4px solid #4FBF9F; }
+  .op-card--delivery:hover {
+    border-bottom: 4px solid #ec7404; }
+  .op-card--maintenance:hover {
+    border-bottom: 4px solid #ffce1e; }
+  .op-card__icon {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    margin: 40px auto; }
+    @media (max-width: 533px) {
+      .op-card__icon {
+        width: 40px;
+        height: 40px; } }
+    .op-card__icon img {
+      width: 100%;
+      height: 100%; }
+  .op-card__name {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 200;
+    font-family: 'Ubuntu';
+    color: #666; }
+  .op-card__number {
+    position: absolute;
+    top: -30px;
+    left: 10px;
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: 'Muli'; }

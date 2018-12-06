@@ -1,0 +1,30 @@
+.type {
+  width: 100%;
+  position: relative;
+  padding: 50px 0 50px; }
+  .type #typing {
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: 'Ubuntu';
+    color: #000;
+    margin: 0;
+    line-height: 70px; }
+    @media (max-width: 992px) {
+      .type #typing {
+        font-size: 3.5rem; } }
+    @media (max-width: 768px) {
+      .type #typing {
+        font-size: 3rem;
+        line-height: 55px; } }
+    @media (max-width: 533px) {
+      .type #typing {
+        font-size: 2.4rem;
+        line-height: 45px; } }
+    @media (max-width: 414px) {
+      .type #typing {
+        font-size: 2rem;
+        line-height: 35px; } }
+    .type #typing--text {
+      font-weight: 300;
+      font-family: 'Quicksand';
+      color: #7400E1; }

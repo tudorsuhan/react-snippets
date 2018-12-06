@@ -1,0 +1,12 @@
+@import '../../../assets/sass/modules/_mixins';
+@import '../../../assets/sass/base/_palette';
+
+.contact {
+    width: 1080px;
+    position: relative;
+    padding: 100px;
+    margin: 0 auto;
+    @include breakpoint(578) {
+        padding: 50px 0; 
+    }
+}

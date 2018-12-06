@@ -1,0 +1,19 @@
+@import '../../../../assets/sass/modules/_mixins';
+@import '../../../../assets/sass/base/_palette';
+@import '../../../../assets/sass/base/_typography';
+
+.sc-wwd {
+    padding: 0 300px 0 0;
+    @include breakpoint(992) {
+        padding: 0 150px 0 0;
+    }
+    @include breakpoint(768) {
+        padding: 0 20px 0 0;
+    }
+}
+
+.p-wwd {
+    font-weight: 100;
+    font-family: 'Cabin';
+    color: $darkslategray;
+}

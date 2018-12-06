@@ -1,0 +1,133 @@
+.data {
+    padding: 40px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: row wrap;
+
+    .data-title {
+        color: #333;
+        width: 100%;
+        margin: 0 0 0 5px;
+    }
+
+    .data-loadtime {
+        color: #333;
+        width: 100%;
+        margin: 0 0 20px 5px;
+    }
+
+    .data-device {
+        background: #fff;
+        margin: 5px;
+        width: calc(94% / 5);
+        transition: all 0.3s ease;
+        position: relative;
+        @media (max-width: 992px) {
+            width: calc(94% / 4);
+        }
+        @media (max-width: 768px) {
+            width: calc(92% / 3);
+        }
+        @media (max-width: 533px) {
+            width: calc(92% / 2);
+        }
+        @media (max-width: 414px) {
+            width: 100%;
+        }
+
+        &:hover {
+            box-shadow: 0px 0px 15px 5px rgba(153, 153, 153, 0.15);
+        }
+
+        &__category-no {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 15px;
+            height: 15px;
+            background: #fff;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.6rem;
+            font-weight: 400;
+        }
+
+        &__category {
+            font-size: 0.7rem;
+            font-weight: 400;
+            padding: 10px 10px 0;
+            background: #333;
+            color: #fff;
+            word-wrap: break-word;
+        }
+
+        &__name {
+            height: 60px;
+            background: #444;
+            color: #fff;
+            padding: 10px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        &__status {
+            padding: 10px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: darkgreen;
+        }
+
+        &__category {
+            padding: 10px;
+        }
+    }
+}
+
+.status {
+    padding: 0 40px 40px;
+
+    &__input {
+        border: none;
+        border-radius: 15px;
+        padding: 7px 15px;
+        border: 2px solid #bbb;
+        transition: border 0.3s ease;
+
+        &:focus {
+            will-change: border;
+            border: 2px solid #777;
+        }
+    }
+
+    &__button {
+        border: none;
+        border: 2px solid #333;
+        border-radius: 15px;
+        padding: 7px 25px;
+        margin-left: 10px;
+        background: #333;
+        color: #fff;
+        cursor: pointer;
+        transition: background 0.3s ease;
+
+        &:hover {
+            will-change: background;
+            background: #fff;
+            color: #333;
+        }
+    }
+}
+
+.loading {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,42 @@
+.promise {
+    position: relative;
+    width: calc(98% / 5);
+    margin: 5px;
+    cursor: crosshair;
+    @include breakpoint(992) {
+        width: calc(94% / 4);
+    }
+    @include breakpoint(768) {
+        width: calc(92% / 3);
+    }
+    @include breakpoint(533) {
+        width: calc(94% / 2);
+        margin: 10px 0;
+    }
+    @include breakpoint(375) {
+        width: 100%;
+    }
+
+    &__identity {
+        padding: 40px 10px;
+        background: $lightgray-t;
+        @include flexbox();
+        @include justify-content(center);
+        @include align-items(center);
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    &__title {
+        padding: 10px 10px 20px;
+        background: $orangered-d;
+        text-align: left;
+        font-size: 1.05rem;
+        font-family: 'Ubuntu';
+        font-weight: 400;
+        color: $lightgray-t;
+    }
+}

@@ -1,0 +1,238 @@
+{
+    "full": 1,
+    "version": "*1.7.583*",
+    "model": "MiCasaVerde VeraLite",
+    "zwave_heal": 1,
+    "temperature": "F",
+    "skin": "mios",
+    "serial_number": "35025096",
+    "fwd1": "rl1.mios.com",
+    "fwd2": "rl2.mios.com",
+    "mode": 1,
+    "sections": [{
+        "name": "My Home",
+        "id": 1
+    }],
+    "rooms": [{
+        "name": "1st room",
+        "id": 1,
+        "section": 1
+    }, {
+        "name": "2nd room",
+        "id": 2,
+        "section": 1
+    }],
+    "scenes": [{
+        "active": 0,
+        "name": "aaa",
+        "id": 2,
+        "room": 0
+    }],
+    "devices": [{
+        "name": "",
+        "altid": "",
+        "id": 20,
+        "category": 0,
+        "subcategory": -1,
+        "room": 0,
+        "parent": 0
+    }, {
+        "name": "Dimmable Light",
+        "altid": "",
+        "id": 52,
+        "category": 2,
+        "subcategory": 0,
+        "room": 0,
+        "parent": 0
+    }, {
+        "name": "Door & Window Sensor",
+        "altid": "",
+        "id": 14,
+        "category": 4,
+        "subcategory": 2,
+        "room": 0,
+        "parent": 0,
+        "tripped": "0",
+        "armed": "0",
+        "armedtripped": "0",
+        "batterylevel": "78"
+    }, {
+        "name": "Door & Window Sensor",
+        "altid": "",
+        "id": 39,
+        "category": 4,
+        "subcategory": 5,
+        "room": 0,
+        "parent": 0,
+        "armed": "0",
+        "tripped": "1",
+        "armedtripped": "0",
+        "batterylevel": "99"
+    }, {
+        "name": "Door Lock",
+        "altid": "",
+        "id": 34,
+        "category": 7,
+        "subcategory": 0,
+        "room": 0,
+        "parent": 0,
+        "batterylevel": "22"
+    }, {
+        "name": "Door\/Window Sensor",
+        "altid": "8",
+        "id": 56,
+        "category": 4,
+        "subcategory": 1,
+        "room": 0,
+        "parent": 1,
+        "armed": "0",
+        "armedtripped": "0"
+    }, {
+        "name": "FLEXIDOME IP indoor 5000 HD",
+        "altid": "",
+        "id": 45,
+        "category": 6,
+        "subcategory": 0,
+        "room": 0,
+        "parent": 0,
+        "ip": "192.168.7.89",
+        "url": "\/snap.jpg",
+        "streaming": "\/snap.jpg",
+        "rtsp": "\/rtsp_tunnel\/?fmt=3",
+        "commands": "camera_full_screen,camera_archive_snapshot",
+        "armed": "1",
+        "armedtripped": "0"
+    }, {
+        "name": "Humidity Sensor",
+        "altid": "",
+        "id": 15,
+        "category": 16,
+        "subcategory": 0,
+        "room": 0,
+        "parent": 0,
+        "batterylevel": "55"
+    }, {
+        "name": "IP Camera",
+        "altid": "SCF9236B",
+        "id": 53,
+        "category": 6,
+        "subcategory": -1,
+        "room": 0,
+        "parent": 0,
+        "url": "\/img\/snapshot.cgi",
+        "streaming": "\/img\/video.mjpeg",
+        "videourls": "http,0,mjpeg,,m,640,480,w:img\/video.mjpeg:",
+        "rtsp": "\/img\/media.sav",
+        "commands": "camera_full_screen,camera_archive_snapshot",
+        "armed": "1",
+        "armedtripped": "0",
+        "state": 2,
+        "comment": "Lua Failure"
+    }, {
+        "name": "Light Sensor",
+        "altid": "",
+        "id": 43,
+        "category": 18,
+        "subcategory": 0,
+        "room": 0,
+        "parent": 0,
+        "batterylevel": "32"
+    }, {
+        "name": "Luz regulable",
+        "altid": "",
+        "id": 29,
+        "category": 2,
+        "subcategory": 0,
+        "room": 0,
+        "parent": 0,
+        "level": "45",
+        "batterylevel": "77"
+    }, {
+        "name": "Motion Sensor",
+        "altid": "",
+        "id": 40,
+        "category": 4,
+        "subcategory": 3,
+        "room": 0,
+        "parent": 0,
+        "tripped": "1",
+        "armed": "0",
+        "armedtripped": "0",
+        "batterylevel": "44"
+    }, {
+        "name": "MA3dulo Enchufable",
+        "altid": "",
+        "id": 30,
+        "category": 3,
+        "subcategory": 0,
+        "room": 0,
+        "parent": 0,
+        "status": "1",
+        "batterylevel": "56"
+    }, {
+        "name": "Scene Controller",
+        "altid": "4",
+        "id": 55,
+        "category": 14,
+        "subcategory": 0,
+        "room": 0,
+        "parent": 1
+    }, {
+        "name": "Sirena",
+        "altid": "",
+        "id": 31,
+        "category": 24,
+        "subcategory": 0,
+        "room": 0,
+        "parent": 0,
+        "batterylevel": "34",
+        "armed": "1",
+        "armedtripped": "0"
+    }, {
+        "name": "Termostato",
+        "altid": "",
+        "id": 27,
+        "category": 5,
+        "subcategory": 1,
+        "room": 0,
+        "parent": 0,
+        "batterylevel": "38"
+    }],
+    "categories": [{
+        "name": "Dimmable Switch",
+        "id": 2
+    }, {
+        "name": "On\/Off Switch",
+        "id": 3
+    }, {
+        "name": "Sensor",
+        "id": 4
+    }, {
+        "name": "Thermostat",
+        "id": 5
+    }, {
+        "name": "Camera",
+        "id": 6
+    }, {
+        "name": "Doorlock",
+        "id": 7
+    }, {
+        "name": "Scene Controller",
+        "id": 14
+    }, {
+        "name": "Humidity Sensor",
+        "id": 16
+    }, {
+        "name": "Light Sensor",
+        "id": 18
+    }, {
+        "name": "Siren",
+        "id": 24
+    }],
+    "ir": 0,
+    "irtx": "",
+    "loadtime": 1432557445,
+    "dataversion": 557445066,
+    "state": 1,
+    "comment": "IP Camera[53]: Running Lua Startup"
+}

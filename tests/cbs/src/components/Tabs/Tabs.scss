@@ -1,0 +1,22 @@
+.tab-list {
+    border-bottom: 4px solid #ccc;
+    padding-left: 0;
+}
+
+.tab-list-item {
+    display: inline-block;
+    list-style: none;
+    margin-bottom: -4px;
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #999;
+}
+
+.tab-list-active {
+    background-color: white;
+    border: none;
+    border-bottom: 4px solid #111;
+    color: #111;
+}

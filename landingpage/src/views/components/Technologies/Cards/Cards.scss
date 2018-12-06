@@ -1,0 +1,54 @@
+@import '../../../../assets/sass/modules/_mixins';
+@import '../../../../assets/sass/base/_palette';
+@import '../../../../assets/sass/base/_typography';
+
+.tech-card {
+    width: calc(98% / 8);
+    height: 105px;
+    position: relative;
+    margin: 10px;
+    cursor: crosshair;
+    @include transition(all 0.3s cubic-bezier(.17, .67, .83, .67));
+    @include breakpoint(1080) {
+        width: calc(94% / 8);
+    }
+    @include breakpoint(992) {
+        width: calc(94% / 6);
+    }
+    @include breakpoint(768) {
+        width: calc(94% / 5);
+    }
+    @include breakpoint(667) {
+        width: calc(94% / 4);
+    }
+    @include breakpoint(533) {
+        width: calc(94% / 3);
+        margin: 10px 0;
+    }
+    @include breakpoint(414) {
+        width: calc(94% / 2);
+    }
+    &:hover {
+        background: $white;
+        @include box-shadow(0px 5px 10px 5px rgba(119, 119, 119, 0.1));
+    }
+
+    &__logo {
+        text-align: center;
+        padding: 10px 0 5px;
+
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    &__name {
+        text-align: center;
+        padding: 0 10px;
+        font-size: 0.9rem;
+        color: #111;
+        font-weight: 600;
+        font-family: 'Rubik', sans-serif;
+    }
+}
