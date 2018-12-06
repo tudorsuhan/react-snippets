@@ -6,12 +6,12 @@ export default class GalleryModal extends Component {
         if(isOpen === false) {
             return null;
         }
-        console.log(isOpen)
+        console.log(this.props)
 
         return (
             <div className={"modal-overlay"} onClick={onClick} name={name}>
                 <div className={"modal-body"}>
-                    <a className={"modal-close"} href={""} onClick={onClick}>
+                    <a className={"modal-close"} href="#/" onClick={onClick}>
                         <span className={"fa fa-times"}></span>
                     </a>
                     <img src={src} alt="" />
