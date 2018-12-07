@@ -53,12 +53,8 @@ const Home = () => (
                     <div className="fetchdata-item"><Link to="/get-data-with-async-await">Get Data with ASYNC & AWAIT</Link></div>
                     <div className="fetchdata-item"><Link to="/get-data-with-hocs">Get Data with HOCs</Link></div>
                     <div className="fetchdata-item"><Link to="/get-data-with-render-props">Get Data with RENDER PROPS</Link></div>
-<<<<<<< HEAD
                     <div className="fetchdata-item"><Link to="/redux-fetch-1">Fetch data with REDUX 1</Link></div>
                     <div className="fetchdata-item"><Link to="/redux-fetch-2">Fetch data with REDUX 2</Link></div>
-=======
-                    <div className="fetchdata-item"><Link to="/redux-fetch">Fetch data with REDUX</Link></div>
->>>>>>> a49ebf4fca167770181ea2f80b27ae3780e4b1a9
                 </div>
             </div>
 

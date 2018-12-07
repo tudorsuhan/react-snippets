@@ -1,10 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-<<<<<<< HEAD
 import { fetchPostsWithRedux } from '../../actions/asyncActions'
-=======
-import { fetchPostsWithRedux } from '../../actions/actionCreators'
->>>>>>> a49ebf4fca167770181ea2f80b27ae3780e4b1a9
 
 class ReduxFetch extends Component {
     componentDidMount() {
