@@ -12,8 +12,6 @@ const loggerMiddleware = createLogger()
 const enhancers = [monitorReducersEnhancer, loggerMiddleware]
 const composedEnhancers = compose(...enhancers)
 
-<<<<<<< HEAD
-=======
 /**
  * Default state
  */
@@ -23,7 +21,6 @@ const composedEnhancers = compose(...enhancers)
 //     posts: []
 // }
 
->>>>>>> a49ebf4fca167770181ea2f80b27ae3780e4b1a9
 const configureStore = () => {
     const persistentState = loadState()
     const store = createStore(
