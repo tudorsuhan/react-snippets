@@ -12,18 +12,6 @@ const loggerMiddleware = createLogger()
 const enhancers = [monitorReducersEnhancer, loggerMiddleware]
 const composedEnhancers = compose(...enhancers)
 
-<<<<<<< HEAD
-=======
-/**
- * Default state
- */
-// const persistentState = {
-//     loading: false,
-//     error: null,
-//     posts: []
-// }
-
->>>>>>> e3a35f34e8ae2c3cafcf12b61cd60734bd02a0b3
 const configureStore = () => {
     const persistentState = loadState()
     const store = createStore(
