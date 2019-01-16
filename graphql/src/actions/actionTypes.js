@@ -1,0 +1,7 @@
+const action = {
+  GET_IMAGES: 'GET_IMAGES',
+  GET_IMAGES_SUCCESS: 'GET_IMAGES_SUCCESS',
+  GET_IMAGES_FAILURE: 'GET_IMAGES_FAILURE',
+};
+
+export default action;
