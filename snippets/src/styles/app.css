@@ -84,10 +84,6 @@
     .dashboard-grid .reactstate,
     .dashboard-grid .pagination,
     .dashboard-grid .infinitescroll,
-<<<<<<< HEAD
-    .dashboard-grid .websockets,
-=======
->>>>>>> 8f4b433d0f13e2050ebd945aca00d9816f0c95a9
     .dashboard-grid .sessionlocalstorage,
     .dashboard-grid .other {
       width: calc(92% / 4);
@@ -106,10 +102,6 @@
         .dashboard-grid .reactstate,
         .dashboard-grid .pagination,
         .dashboard-grid .infinitescroll,
-<<<<<<< HEAD
-        .dashboard-grid .websockets,
-=======
->>>>>>> 8f4b433d0f13e2050ebd945aca00d9816f0c95a9
         .dashboard-grid .sessionlocalstorage,
         .dashboard-grid .other {
           width: calc(92% / 3); } }
@@ -123,10 +115,6 @@
         .dashboard-grid .reactstate,
         .dashboard-grid .pagination,
         .dashboard-grid .infinitescroll,
-<<<<<<< HEAD
-        .dashboard-grid .websockets,
-=======
->>>>>>> 8f4b433d0f13e2050ebd945aca00d9816f0c95a9
         .dashboard-grid .sessionlocalstorage,
         .dashboard-grid .other {
           width: calc(90% / 2); } }
@@ -140,10 +128,6 @@
         .dashboard-grid .reactstate,
         .dashboard-grid .pagination,
         .dashboard-grid .infinitescroll,
-<<<<<<< HEAD
-        .dashboard-grid .websockets,
-=======
->>>>>>> 8f4b433d0f13e2050ebd945aca00d9816f0c95a9
         .dashboard-grid .sessionlocalstorage,
         .dashboard-grid .other {
           width: 100%; } }
@@ -156,10 +140,6 @@
       .dashboard-grid .reactstate-title,
       .dashboard-grid .pagination-title,
       .dashboard-grid .infinitescroll-title,
-<<<<<<< HEAD
-      .dashboard-grid .websockets-title,
-=======
->>>>>>> 8f4b433d0f13e2050ebd945aca00d9816f0c95a9
       .dashboard-grid .sessionlocalstorage-title,
       .dashboard-grid .other-title {
         width: 100%;
@@ -179,10 +159,6 @@
       .dashboard-grid .reactstate-wrapper,
       .dashboard-grid .pagination-wrapper,
       .dashboard-grid .infinitescroll-wrapper,
-<<<<<<< HEAD
-      .dashboard-grid .websockets-wrapper,
-=======
->>>>>>> 8f4b433d0f13e2050ebd945aca00d9816f0c95a9
       .dashboard-grid .sessionlocalstorage-wrapper,
       .dashboard-grid .other-wrapper {
         width: 100%;
@@ -198,10 +174,6 @@
       .dashboard-grid .reactstate-item a,
       .dashboard-grid .pagination-item a,
       .dashboard-grid .infinitescroll-item a,
-<<<<<<< HEAD
-      .dashboard-grid .websockets-item a,
-=======
->>>>>>> 8f4b433d0f13e2050ebd945aca00d9816f0c95a9
       .dashboard-grid .sessionlocalstorage-item a,
       .dashboard-grid .other-item a {
         font-size: 0.9rem;
@@ -217,10 +189,6 @@
         .dashboard-grid .reactstate-item a:hover,
         .dashboard-grid .pagination-item a:hover,
         .dashboard-grid .infinitescroll-item a:hover,
-<<<<<<< HEAD
-        .dashboard-grid .websockets-item a:hover,
-=======
->>>>>>> 8f4b433d0f13e2050ebd945aca00d9816f0c95a9
         .dashboard-grid .sessionlocalstorage-item a:hover,
         .dashboard-grid .other-item a:hover {
           will-change: all;
