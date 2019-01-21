@@ -13,6 +13,8 @@ import GetUserInformation from '../components/GetUserInformation/GetUserInformat
 
 import SessionLocalStorage from '../components/SessionLocalStorage/SessionLocalStorage';
 
+import HandleLikes from '../components/Features/HandleLikes';
+
 import Pagination from '../components/Pagination/Pagination';
 import HOCPagination from '../components/Pagination/HOCPagination';
 
@@ -30,7 +32,7 @@ import DataChildToParent from '../components/PassingData/ChildToParent';
 import EventChildToParent from '../components/PassingData/ChildToParentEvent';
 import DataParentToChild from '../components/PassingData/ParentToChild';
 
-import ManageStateWithArrays from '../components/ReactState/ManageStateWithArrays'
+import ManageStateWithArrays from '../components/ReactState/ManageStateWithArrays';
 
 import FetchDataWithRedux from '../components/Redux/ReduxFetch';
 
@@ -82,6 +84,7 @@ const Routes = () => (
         <Route path="/react-advanced-list-component" component={AdvancedListComponent} />
         <Route path="/session-and-localstorage-in-react" component={SessionLocalStorage} />
         <Route path="/get-user-location" component={GetUserInformation} />
+        <Route path="/likes" component={HandleLikes} />
     </Switch>
 );
 

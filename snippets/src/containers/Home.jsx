@@ -103,6 +103,14 @@ const Home = () => (
                 </div>
             </div>
 
+            {/** Features */}
+            <div className="sessionlocalstorage">
+                <div className="sessionlocalstorage-title">Features</div>
+                <div className="sessionlocalstorage-wrapper">
+                    <div className="sessionlocalstorage-item"><Link to="/likes">Handle Likes</Link></div>
+                </div>
+            </div>
+
             {/** Other */}
             <div className="other">
                 <div className="other-title">Other</div>
