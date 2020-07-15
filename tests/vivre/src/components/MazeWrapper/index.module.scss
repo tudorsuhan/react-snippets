@@ -1,0 +1,38 @@
+.maze {
+  background-color: #FFF;
+  border: 1px solid #bbb;
+  padding: 2px;
+  display: flex;
+  justify-content: space-between;    
+  align-items: center;
+  flex-flow: row wrap;
+  margin-left: 50px;
+  overflow: hidden;
+}
+
+.mazeItem {
+  flex: 0 0 auto;
+  border: 1px solid transparent;
+}
+
+.pathItem {
+  border: 2px solid rgb(243, 177, 255);
+}
+
+.startItem {
+  border: 2px solid #08b808;
+  &::before {
+    content: 'Start';
+    background-color: transparent;
+    position: absolute;
+  }
+}
+
+.endItem {  
+  border: 2px solid rgb(12, 157, 224);
+  &::before {
+    content: 'End';
+    background-color: transparent;
+    position: absolute;
+  }
+}

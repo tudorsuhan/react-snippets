@@ -1,0 +1,23 @@
+.maze-form {
+  width: 400px;
+  height: 480px;
+  margin-right: 50px;
+  &__wh {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.form-item {
+  display: block !important;
+  margin-bottom: 5px !important;
+  &__number {
+    width: 100% !important;
+  }
+}
+
+.button {
+  margin-top: 20px !important;
+}
